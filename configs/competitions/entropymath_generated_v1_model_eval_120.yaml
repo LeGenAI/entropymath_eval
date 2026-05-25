@@ -1,0 +1,12 @@
+name: entropymath_generated_v1_model_eval_120
+dataset_path: json
+data_files: data/entropymath_generated_v1_model_eval_120.jsonl
+subset: train
+n_problems: 120
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "EntropyMath-Generated-v1 public frozen model_eval_stratified_120.csv"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

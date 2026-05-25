@@ -1,0 +1,8 @@
+model: exaone-4.0.1-32b
+base_url: http://localhost:1234/v1
+api_key: not-needed
+temperature: 0.3
+max_tokens: 4096
+max_turns: 16
+reasoning_effort: "high"
+stop: ["Observation:", "<|call|>"]

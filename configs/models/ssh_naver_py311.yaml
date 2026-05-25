@@ -1,0 +1,7 @@
+model: naver-hyperclovax/HyperCLOVAX-SEED-Think-32B
+base_url: http://localhost:8000/v1  # use SSH tunnel: ssh -L 8000:localhost:8000 prof_kim_jr@203.253.84.79
+api_key: hyperclova-test
+temperature: 0.3
+max_tokens: -1
+max_turns: 30
+stop: ["Observation:", "<|call|>"]

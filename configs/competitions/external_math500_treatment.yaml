@@ -1,0 +1,12 @@
+name: external_math500_treatment
+dataset_path: json
+data_files: /Users/imds/Desktop/icml_2026_entropymath/repo/data/eval/external/math500_treatment_124.jsonl
+subset: train
+n_problems: 124
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "EntropyMath-generated children of math500 seeds (combos a+b+c+d, 10 generations each)"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

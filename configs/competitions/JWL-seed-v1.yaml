@@ -1,0 +1,5 @@
+name: JWL-seed-v1
+dataset_path: LeBrony/JWL-seed-v1
+subset: train
+n_problems: 5
+start_idx: 0

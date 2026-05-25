@@ -1,0 +1,5 @@
+name: entropy_math_seed_v1
+dataset_path: LeBrony/EntropyMath_seed_v1
+subset: train
+n_problems: 50
+start_idx: 0

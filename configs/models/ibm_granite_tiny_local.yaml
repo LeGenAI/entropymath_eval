@@ -1,0 +1,7 @@
+model: ibm/granite-4-h-tiny
+base_url: http://localhost:1234/v1
+api_key: not-needed
+temperature: 0.3
+max_tokens: -1
+max_turns: 30
+stop: ["Observation:", "<|call|>"]

@@ -1,0 +1,12 @@
+name: external_gsm8k_treatment
+dataset_path: json
+data_files: /Users/imds/Desktop/icml_2026_entropymath/repo/data/eval/external/gsm8k_treatment_121.jsonl
+subset: train
+n_problems: 121
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "EntropyMath-generated children of gsm8k seeds (combos a+b+c+d, 10 generations each)"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

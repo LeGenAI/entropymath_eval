@@ -1,0 +1,1557 @@
+{
+  "openai/gpt-oss-20b": {
+    "model": "gpt-oss-20b",
+    "total_runs": 54,
+    "solved": 52,
+    "correct": 18,
+    "accuracy": 0.25925925925925924,
+    "problems": {
+      "22": {
+        "run_idx": 0,
+        "final_answer": "K=4",
+        "gold_answer": "4",
+        "solved": true,
+        "correct": true
+      },
+      "15": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "9801",
+        "solved": true,
+        "correct": false
+      },
+      "40": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "6": {
+        "run_idx": 0,
+        "final_answer": "147744",
+        "gold_answer": "147744",
+        "solved": true,
+        "correct": true
+      },
+      "18": {
+        "run_idx": 0,
+        "final_answer": "\\,\\displaystyle \\lim_{n\\to\\infty}\\int_E |f_n-f|\\,dm = 0\\,",
+        "gold_answer": "0",
+        "solved": true,
+        "correct": true
+      },
+      "51": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "\\frac{2880}{1{,}793{,}363}",
+        "solved": true,
+        "correct": false
+      },
+      "33": {
+        "run_idx": 0,
+        "final_answer": "6",
+        "gold_answer": "9",
+        "solved": true,
+        "correct": false
+      },
+      "48": {
+        "run_idx": 0,
+        "final_answer": null,
+        "gold_answer": "5842",
+        "solved": false,
+        "correct": false
+      },
+      "54": {
+        "run_idx": 0,
+        "final_answer": "896",
+        "gold_answer": "896",
+        "solved": true,
+        "correct": true
+      },
+      "36": {
+        "run_idx": 0,
+        "final_answer": "9551",
+        "gold_answer": "9551",
+        "solved": true,
+        "correct": true
+      },
+      "10": {
+        "run_idx": 0,
+        "final_answer": "(a,b,c,d)=(15,\\,87,\\,63,\\,79)",
+        "gold_answer": "${a=15,\\quad b=87,\\quad c=63,\\quad d=79.}$",
+        "solved": true,
+        "correct": true
+      },
+      "27": {
+        "run_idx": 0,
+        "final_answer": "-4051.5",
+        "gold_answer": "-\\frac{8103}{2}",
+        "solved": true,
+        "correct": true
+      },
+      "45": {
+        "run_idx": 0,
+        "final_answer": "5928",
+        "gold_answer": "5928",
+        "solved": true,
+        "correct": true
+      },
+      "3": {
+        "run_idx": 0,
+        "final_answer": "12",
+        "gold_answer": "1",
+        "solved": true,
+        "correct": false
+      },
+      "4": {
+        "run_idx": 0,
+        "final_answer": "931\\,229\\,428",
+        "gold_answer": "184",
+        "solved": true,
+        "correct": false
+      },
+      "17": {
+        "run_idx": 0,
+        "final_answer": "288",
+        "gold_answer": "288",
+        "solved": true,
+        "correct": true
+      },
+      "20": {
+        "run_idx": 0,
+        "final_answer": "\\dfrac{125}{12}",
+        "gold_answer": "\\frac{125}{12}",
+        "solved": true,
+        "correct": false
+      },
+      "42": {
+        "run_idx": 0,
+        "final_answer": "56",
+        "gold_answer": "28",
+        "solved": true,
+        "correct": false
+      },
+      "9": {
+        "run_idx": 0,
+        "final_answer": "21,\\;31,\\;49,\\;55,\\;88",
+        "gold_answer": "\\{a,b,c,d,e\\} = \\{55,49,88,31,21\\}",
+        "solved": true,
+        "correct": false
+      },
+      "53": {
+        "run_idx": 0,
+        "final_answer": "1358280",
+        "gold_answer": "882",
+        "solved": true,
+        "correct": false
+      },
+      "31": {
+        "run_idx": 0,
+        "final_answer": "2040",
+        "gold_answer": "15898200",
+        "solved": true,
+        "correct": false
+      },
+      "34": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "28": {
+        "run_idx": 0,
+        "final_answer": "1444",
+        "gold_answer": "44652 (p=122, q=3)",
+        "solved": true,
+        "correct": false
+      },
+      "1": {
+        "run_idx": 0,
+        "final_answer": "470",
+        "gold_answer": "469",
+        "solved": true,
+        "correct": false
+      },
+      "39": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "25": {
+        "run_idx": 0,
+        "final_answer": "202",
+        "gold_answer": "130",
+        "solved": true,
+        "correct": false
+      },
+      "12": {
+        "run_idx": 0,
+        "final_answer": "[\\,64,\\;39,\\;12\\,]_2",
+        "gold_answer": "$[64,39,8]_2$",
+        "solved": true,
+        "correct": false
+      },
+      "49": {
+        "run_idx": 0,
+        "final_answer": "\\frac{67575}{994936}\\approx0.0679 ",
+        "gold_answer": "\\frac{965439299631293175}{14215144014981627904}",
+        "solved": true,
+        "correct": false
+      },
+      "37": {
+        "run_idx": 0,
+        "final_answer": "15651",
+        "gold_answer": "15593",
+        "solved": true,
+        "correct": false
+      },
+      "11": {
+        "run_idx": 0,
+        "final_answer": "2027025",
+        "gold_answer": "$2{,}027{,}025$",
+        "solved": true,
+        "correct": false
+      },
+      "26": {
+        "run_idx": 0,
+        "final_answer": "21",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": false
+      },
+      "44": {
+        "run_idx": 0,
+        "final_answer": "2025",
+        "gold_answer": "4050",
+        "solved": true,
+        "correct": false
+      },
+      "2": {
+        "run_idx": 0,
+        "final_answer": "91666486036450",
+        "gold_answer": "91666486036450",
+        "solved": true,
+        "correct": true
+      },
+      "23": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0+0i",
+        "solved": true,
+        "correct": false
+      },
+      "14": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "421",
+        "solved": true,
+        "correct": false
+      },
+      "41": {
+        "run_idx": 0,
+        "final_answer": "88578967581",
+        "gold_answer": "42987601",
+        "solved": true,
+        "correct": false
+      },
+      "7": {
+        "run_idx": 0,
+        "final_answer": "(a,b,c)=(97,33,21)",
+        "gold_answer": "$(a,b,c) = (21,33,97) \\quad \\text{(in any order).}$",
+        "solved": true,
+        "correct": false
+      },
+      "19": {
+        "run_idx": 0,
+        "final_answer": "\\displaystyle \\lim_{n\\to\\infty}\\int_0^n(1-\\frac{205}{69n}x)^{69n}\\,e^{-6x/7}\\,dx\n=\\frac{7}{1441}",
+        "gold_answer": "\\frac{7}{1441}",
+        "solved": true,
+        "correct": false
+      },
+      "50": {
+        "run_idx": 0,
+        "final_answer": "\\,0.5450157926\\dots\\,",
+        "gold_answer": "\\frac{1}{3}",
+        "solved": true,
+        "correct": false
+      },
+      "32": {
+        "run_idx": 0,
+        "final_answer": null,
+        "gold_answer": "<0, 1>,<65280,1082113920>,<65281, 2147450880>,<65282, 1082146816>,\n<65536, 2147516415>,<65537, 4295032832>,<65538, 2147450880>,\n<65792, 1065336960>,<65793, 2147450880>,<65794, 1065369600>",
+        "solved": false,
+        "correct": false
+      },
+      "35": {
+        "run_idx": 0,
+        "final_answer": "48",
+        "gold_answer": "24",
+        "solved": true,
+        "correct": false
+      },
+      "29": {
+        "run_idx": 0,
+        "final_answer": "7",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": true
+      },
+      "38": {
+        "run_idx": 0,
+        "final_answer": "2510",
+        "gold_answer": "2508",
+        "solved": true,
+        "correct": false
+      },
+      "0": {
+        "run_idx": 0,
+        "final_answer": "-1",
+        "gold_answer": "-1",
+        "solved": true,
+        "correct": true
+      },
+      "24": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "2",
+        "solved": true,
+        "correct": false
+      },
+      "13": {
+        "run_idx": 0,
+        "final_answer": "38256",
+        "gold_answer": "38256",
+        "solved": true,
+        "correct": true
+      },
+      "46": {
+        "run_idx": 0,
+        "final_answer": "1284945581705486809835426700",
+        "gold_answer": "1284945581705486809835426700",
+        "solved": true,
+        "correct": true
+      },
+      "5": {
+        "run_idx": 0,
+        "final_answer": "1799877895922108",
+        "gold_answer": "1799877895922108",
+        "solved": true,
+        "correct": true
+      },
+      "16": {
+        "run_idx": 0,
+        "final_answer": "37",
+        "gold_answer": "652138905600",
+        "solved": true,
+        "correct": false
+      },
+      "21": {
+        "run_idx": 0,
+        "final_answer": "3",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": true
+      },
+      "43": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "1200304",
+        "solved": true,
+        "correct": false
+      },
+      "52": {
+        "run_idx": 0,
+        "final_answer": "\\dfrac{65}{57}\\approx1.1403508772",
+        "gold_answer": "\\frac{65}{57}",
+        "solved": true,
+        "correct": false
+      },
+      "30": {
+        "run_idx": 0,
+        "final_answer": "600",
+        "gold_answer": "496",
+        "solved": true,
+        "correct": false
+      },
+      "8": {
+        "run_idx": 0,
+        "final_answer": "111,\\;89,\\;78,\\;29",
+        "gold_answer": "$\\{a,b,c,d\\}=\\{29,78,89,111\\}.$",
+        "solved": true,
+        "correct": false
+      }
+    }
+  },
+  "google/gemma-3-27b": {
+    "model": "gemma-3-27b",
+    "total_runs": 55,
+    "solved": 54,
+    "correct": 7,
+    "accuracy": 0.12727272727272726,
+    "problems": {
+      "22": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "4",
+        "solved": true,
+        "correct": false
+      },
+      "15": {
+        "run_idx": 0,
+        "final_answer": "263175",
+        "gold_answer": "9801",
+        "solved": true,
+        "correct": false
+      },
+      "40": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "6": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "147744",
+        "solved": true,
+        "correct": false
+      },
+      "18": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0",
+        "solved": true,
+        "correct": true
+      },
+      "51": {
+        "run_idx": 0,
+        "final_answer": "0.0354",
+        "gold_answer": "\\frac{2880}{1{,}793{,}363}",
+        "solved": true,
+        "correct": false
+      },
+      "33": {
+        "run_idx": 0,
+        "final_answer": "6",
+        "gold_answer": "9",
+        "solved": true,
+        "correct": false
+      },
+      "48": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "5842",
+        "solved": true,
+        "correct": false
+      },
+      "54": {
+        "run_idx": 0,
+        "final_answer": "800",
+        "gold_answer": "896",
+        "solved": true,
+        "correct": false
+      },
+      "36": {
+        "run_idx": 0,
+        "final_answer": "20735",
+        "gold_answer": "9551",
+        "solved": true,
+        "correct": false
+      },
+      "10": {
+        "run_idx": 0,
+        "final_answer": "a=60, b=75, c=90, d=105",
+        "gold_answer": "${a=15,\\quad b=87,\\quad c=63,\\quad d=79.}$",
+        "solved": true,
+        "correct": false
+      },
+      "27": {
+        "run_idx": 0,
+        "final_answer": "-2026",
+        "gold_answer": "-\\frac{8103}{2}",
+        "solved": true,
+        "correct": false
+      },
+      "45": {
+        "run_idx": 0,
+        "final_answer": "1089",
+        "gold_answer": "5928",
+        "solved": true,
+        "correct": false
+      },
+      "3": {
+        "run_idx": 0,
+        "final_answer": "12",
+        "gold_answer": "1",
+        "solved": true,
+        "correct": false
+      },
+      "4": {
+        "run_idx": 0,
+        "final_answer": "465614714",
+        "gold_answer": "184",
+        "solved": true,
+        "correct": false
+      },
+      "17": {
+        "run_idx": 0,
+        "final_answer": "263",
+        "gold_answer": "288",
+        "solved": true,
+        "correct": false
+      },
+      "20": {
+        "run_idx": 0,
+        "final_answer": "",
+        "gold_answer": "\\frac{125}{12}",
+        "solved": true,
+        "correct": false
+      },
+      "42": {
+        "run_idx": 0,
+        "final_answer": "42",
+        "gold_answer": "28",
+        "solved": true,
+        "correct": false
+      },
+      "9": {
+        "run_idx": 0,
+        "final_answer": "a=21, b=31, c=49, d=55, e=88",
+        "gold_answer": "\\{a,b,c,d,e\\} = \\{55,49,88,31,21\\}",
+        "solved": true,
+        "correct": false
+      },
+      "53": {
+        "run_idx": 0,
+        "final_answer": "126",
+        "gold_answer": "882",
+        "solved": true,
+        "correct": false
+      },
+      "31": {
+        "run_idx": 0,
+        "final_answer": "10",
+        "gold_answer": "15898200",
+        "solved": true,
+        "correct": false
+      },
+      "34": {
+        "run_idx": 0,
+        "final_answer": "33",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "28": {
+        "run_idx": 0,
+        "final_answer": "1444",
+        "gold_answer": "44652 (p=122, q=3)",
+        "solved": true,
+        "correct": false
+      },
+      "1": {
+        "run_idx": 0,
+        "final_answer": "470",
+        "gold_answer": "469",
+        "solved": true,
+        "correct": false
+      },
+      "39": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "25": {
+        "run_idx": 0,
+        "final_answer": "130",
+        "gold_answer": "130",
+        "solved": true,
+        "correct": true
+      },
+      "12": {
+        "run_idx": 0,
+        "final_answer": "[64, 39]",
+        "gold_answer": "$[64,39,8]_2$",
+        "solved": true,
+        "correct": false
+      },
+      "47": {
+        "run_idx": 0,
+        "final_answer": "0.0436",
+        "gold_answer": "\\dfrac{2835}{6146678}",
+        "solved": true,
+        "correct": false
+      },
+      "49": {
+        "run_idx": 0,
+        "final_answer": "0.016",
+        "gold_answer": "\\frac{965439299631293175}{14215144014981627904}",
+        "solved": true,
+        "correct": false
+      },
+      "37": {
+        "run_idx": 0,
+        "final_answer": "11784",
+        "gold_answer": "15593",
+        "solved": true,
+        "correct": false
+      },
+      "11": {
+        "run_idx": 0,
+        "final_answer": "2^8 \\cdot 8!",
+        "gold_answer": "$2{,}027{,}025$",
+        "solved": true,
+        "correct": false
+      },
+      "26": {
+        "run_idx": 0,
+        "final_answer": "7",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": true
+      },
+      "44": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "4050",
+        "solved": true,
+        "correct": false
+      },
+      "2": {
+        "run_idx": 0,
+        "final_answer": "70833342",
+        "gold_answer": "91666486036450",
+        "solved": true,
+        "correct": false
+      },
+      "23": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0+0i",
+        "solved": true,
+        "correct": false
+      },
+      "14": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "421",
+        "solved": true,
+        "correct": false
+      },
+      "41": {
+        "run_idx": 0,
+        "final_answer": "88578967581",
+        "gold_answer": "42987601",
+        "solved": true,
+        "correct": false
+      },
+      "7": {
+        "run_idx": 0,
+        "final_answer": "21, 33, 97",
+        "gold_answer": "$(a,b,c) = (21,33,97) \\quad \\text{(in any order).}$",
+        "solved": true,
+        "correct": false
+      },
+      "19": {
+        "run_idx": 0,
+        "final_answer": "1/205",
+        "gold_answer": "\\frac{7}{1441}",
+        "solved": true,
+        "correct": false
+      },
+      "50": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "\\frac{1}{3}",
+        "solved": true,
+        "correct": false
+      },
+      "32": {
+        "run_idx": 0,
+        "final_answer": "65537",
+        "gold_answer": "<0, 1>,<65280,1082113920>,<65281, 2147450880>,<65282, 1082146816>,\n<65536, 2147516415>,<65537, 4295032832>,<65538, 2147450880>,\n<65792, 1065336960>,<65793, 2147450880>,<65794, 1065369600>",
+        "solved": true,
+        "correct": false
+      },
+      "35": {
+        "run_idx": 0,
+        "final_answer": "4",
+        "gold_answer": "24",
+        "solved": true,
+        "correct": false
+      },
+      "29": {
+        "run_idx": 0,
+        "final_answer": "10",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": false
+      },
+      "38": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "2508",
+        "solved": true,
+        "correct": false
+      },
+      "0": {
+        "run_idx": 0,
+        "final_answer": "-1",
+        "gold_answer": "-1",
+        "solved": true,
+        "correct": true
+      },
+      "24": {
+        "run_idx": 0,
+        "final_answer": null,
+        "gold_answer": "2",
+        "solved": false,
+        "correct": false
+      },
+      "13": {
+        "run_idx": 0,
+        "final_answer": "8",
+        "gold_answer": "38256",
+        "solved": true,
+        "correct": false
+      },
+      "46": {
+        "run_idx": 0,
+        "final_answer": "4192241210329711",
+        "gold_answer": "1284945581705486809835426700",
+        "solved": true,
+        "correct": false
+      },
+      "5": {
+        "run_idx": 0,
+        "final_answer": "1799877895922108",
+        "gold_answer": "1799877895922108",
+        "solved": true,
+        "correct": true
+      },
+      "16": {
+        "run_idx": 0,
+        "final_answer": "2758",
+        "gold_answer": "652138905600",
+        "solved": true,
+        "correct": false
+      },
+      "21": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "43": {
+        "run_idx": 0,
+        "final_answer": "823543",
+        "gold_answer": "1200304",
+        "solved": true,
+        "correct": false
+      },
+      "52": {
+        "run_idx": 0,
+        "final_answer": "0.518",
+        "gold_answer": "\\frac{65}{57}",
+        "solved": true,
+        "correct": false
+      },
+      "30": {
+        "run_idx": 0,
+        "final_answer": "432",
+        "gold_answer": "496",
+        "solved": true,
+        "correct": false
+      },
+      "8": {
+        "run_idx": 0,
+        "final_answer": "no solution",
+        "gold_answer": "$\\{a,b,c,d\\}=\\{29,78,89,111\\}.$",
+        "solved": true,
+        "correct": false
+      }
+    }
+  },
+  "qwen/qwen3-30b-a3b-2507": {
+    "model": "qwen3-30b-a3b-2507",
+    "total_runs": 54,
+    "solved": 54,
+    "correct": 16,
+    "accuracy": 0.2962962962962963,
+    "problems": {
+      "22": {
+        "run_idx": 0,
+        "final_answer": "4",
+        "gold_answer": "4",
+        "solved": true,
+        "correct": true
+      },
+      "15": {
+        "run_idx": 0,
+        "final_answer": "9801",
+        "gold_answer": "9801",
+        "solved": true,
+        "correct": true
+      },
+      "40": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "6": {
+        "run_idx": 0,
+        "final_answer": "147744",
+        "gold_answer": "147744",
+        "solved": true,
+        "correct": true
+      },
+      "18": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0",
+        "solved": true,
+        "correct": true
+      },
+      "51": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "\\frac{2880}{1{,}793{,}363}",
+        "solved": true,
+        "correct": false
+      },
+      "33": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "9",
+        "solved": true,
+        "correct": false
+      },
+      "48": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "5842",
+        "solved": true,
+        "correct": false
+      },
+      "54": {
+        "run_idx": 0,
+        "final_answer": "1792",
+        "gold_answer": "896",
+        "solved": true,
+        "correct": false
+      },
+      "10": {
+        "run_idx": 0,
+        "final_answer": "a=15,\\ b=87,\\ c=63,\\ d=79",
+        "gold_answer": "${a=15,\\quad b=87,\\quad c=63,\\quad d=79.}$",
+        "solved": true,
+        "correct": false
+      },
+      "27": {
+        "run_idx": 0,
+        "final_answer": "-4051.5",
+        "gold_answer": "-\\frac{8103}{2}",
+        "solved": true,
+        "correct": false
+      },
+      "45": {
+        "run_idx": 0,
+        "final_answer": "5928",
+        "gold_answer": "5928",
+        "solved": true,
+        "correct": true
+      },
+      "3": {
+        "run_idx": 0,
+        "final_answer": "24",
+        "gold_answer": "1",
+        "solved": true,
+        "correct": false
+      },
+      "4": {
+        "run_idx": 0,
+        "final_answer": "46",
+        "gold_answer": "184",
+        "solved": true,
+        "correct": false
+      },
+      "17": {
+        "run_idx": 0,
+        "final_answer": "288",
+        "gold_answer": "288",
+        "solved": true,
+        "correct": true
+      },
+      "20": {
+        "run_idx": 0,
+        "final_answer": "-\\frac{125}{12}",
+        "gold_answer": "\\frac{125}{12}",
+        "solved": true,
+        "correct": false
+      },
+      "42": {
+        "run_idx": 0,
+        "final_answer": "14",
+        "gold_answer": "28",
+        "solved": true,
+        "correct": false
+      },
+      "9": {
+        "run_idx": 0,
+        "final_answer": "21,\\ 31,\\ 49,\\ 55,\\ 88",
+        "gold_answer": "\\{a,b,c,d,e\\} = \\{55,49,88,31,21\\}",
+        "solved": true,
+        "correct": false
+      },
+      "53": {
+        "run_idx": 0,
+        "final_answer": "882",
+        "gold_answer": "882",
+        "solved": true,
+        "correct": true
+      },
+      "31": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "15898200",
+        "solved": true,
+        "correct": false
+      },
+      "34": {
+        "run_idx": 0,
+        "final_answer": "17",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "28": {
+        "run_idx": 0,
+        "final_answer": "1444",
+        "gold_answer": "44652 (p=122, q=3)",
+        "solved": true,
+        "correct": false
+      },
+      "1": {
+        "run_idx": 0,
+        "final_answer": "470",
+        "gold_answer": "469",
+        "solved": true,
+        "correct": false
+      },
+      "39": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "25": {
+        "run_idx": 0,
+        "final_answer": "37",
+        "gold_answer": "130",
+        "solved": true,
+        "correct": false
+      },
+      "12": {
+        "run_idx": 0,
+        "final_answer": "[64,39,16]_2",
+        "gold_answer": "$[64,39,8]_2$",
+        "solved": true,
+        "correct": false
+      },
+      "47": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "\\dfrac{2835}{6146678}",
+        "solved": true,
+        "correct": false
+      },
+      "49": {
+        "run_idx": 0,
+        "final_answer": "\\dfrac{1}{15}",
+        "gold_answer": "\\frac{965439299631293175}{14215144014981627904}",
+        "solved": true,
+        "correct": false
+      },
+      "37": {
+        "run_idx": 0,
+        "final_answer": "15651",
+        "gold_answer": "15593",
+        "solved": true,
+        "correct": false
+      },
+      "11": {
+        "run_idx": 0,
+        "final_answer": "2027025",
+        "gold_answer": "$2{,}027{,}025$",
+        "solved": true,
+        "correct": false
+      },
+      "26": {
+        "run_idx": 0,
+        "final_answer": "7",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": true
+      },
+      "44": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "4050",
+        "solved": true,
+        "correct": false
+      },
+      "2": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "91666486036450",
+        "solved": true,
+        "correct": false
+      },
+      "23": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0+0i",
+        "solved": true,
+        "correct": false
+      },
+      "14": {
+        "run_idx": 0,
+        "final_answer": "24",
+        "gold_answer": "421",
+        "solved": true,
+        "correct": false
+      },
+      "41": {
+        "run_idx": 0,
+        "final_answer": "88578967581",
+        "gold_answer": "42987601",
+        "solved": true,
+        "correct": false
+      },
+      "7": {
+        "run_idx": 0,
+        "final_answer": "a = 21,\\ b = 33,\\ c = 97",
+        "gold_answer": "$(a,b,c) = (21,33,97) \\quad \\text{(in any order).}$",
+        "solved": true,
+        "correct": false
+      },
+      "19": {
+        "run_idx": 0,
+        "final_answer": "\\frac{7}{1441}",
+        "gold_answer": "\\frac{7}{1441}",
+        "solved": true,
+        "correct": true
+      },
+      "50": {
+        "run_idx": 0,
+        "final_answer": "\\frac{1}{3}",
+        "gold_answer": "\\frac{1}{3}",
+        "solved": true,
+        "correct": true
+      },
+      "32": {
+        "run_idx": 0,
+        "final_answer": "2^{16} - 2^8 \\text{ and } 2^{16} + 2^8",
+        "gold_answer": "<0, 1>,<65280,1082113920>,<65281, 2147450880>,<65282, 1082146816>,\n<65536, 2147516415>,<65537, 4295032832>,<65538, 2147450880>,\n<65792, 1065336960>,<65793, 2147450880>,<65794, 1065369600>",
+        "solved": true,
+        "correct": false
+      },
+      "35": {
+        "run_idx": 0,
+        "final_answer": "12",
+        "gold_answer": "24",
+        "solved": true,
+        "correct": false
+      },
+      "29": {
+        "run_idx": 0,
+        "final_answer": "\\dfrac{1}{7!} \\dfrac{d^7}{dx^7} \\left[ P(x) e^{ix} \\right]_{x=3i}",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": false
+      },
+      "38": {
+        "run_idx": 0,
+        "final_answer": "\\begin{array}{cccc} 1 & 2 & 3 & 4 \\\\ 2 & 1 & 4 & 3 \\\\ 3 & 4 & 1 & 2 \\\\ 4 & 3 & 2 & 1 \\end{array}",
+        "gold_answer": "2508",
+        "solved": true,
+        "correct": false
+      },
+      "0": {
+        "run_idx": 0,
+        "final_answer": "-1",
+        "gold_answer": "-1",
+        "solved": true,
+        "correct": true
+      },
+      "24": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "2",
+        "solved": true,
+        "correct": true
+      },
+      "13": {
+        "run_idx": 0,
+        "final_answer": "208",
+        "gold_answer": "38256",
+        "solved": true,
+        "correct": false
+      },
+      "46": {
+        "run_idx": 0,
+        "final_answer": "\\dbinom{60}{20}",
+        "gold_answer": "1284945581705486809835426700",
+        "solved": true,
+        "correct": false
+      },
+      "5": {
+        "run_idx": 0,
+        "final_answer": "1799877895922108",
+        "gold_answer": "1799877895922108",
+        "solved": true,
+        "correct": true
+      },
+      "16": {
+        "run_idx": 0,
+        "final_answer": "24261120",
+        "gold_answer": "652138905600",
+        "solved": true,
+        "correct": false
+      },
+      "21": {
+        "run_idx": 0,
+        "final_answer": "3",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": true
+      },
+      "43": {
+        "run_idx": 0,
+        "final_answer": "n!",
+        "gold_answer": "1200304",
+        "solved": true,
+        "correct": false
+      },
+      "52": {
+        "run_idx": 0,
+        "final_answer": "1.1403508771929824",
+        "gold_answer": "\\frac{65}{57}",
+        "solved": true,
+        "correct": false
+      },
+      "30": {
+        "run_idx": 0,
+        "final_answer": "\\left( \\frac{3 + \\sqrt{5}}{2} \\right)^n + \\left( \\frac{3 - \\sqrt{5}}{2} \\right)^n - 2",
+        "gold_answer": "496",
+        "solved": true,
+        "correct": false
+      },
+      "8": {
+        "run_idx": 0,
+        "final_answer": "\\text{No such natural numbers exist}",
+        "gold_answer": "$\\{a,b,c,d\\}=\\{29,78,89,111\\}.$",
+        "solved": true,
+        "correct": false
+      }
+    }
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "model": "deepseek-r1-distill-qwen-32b",
+    "total_runs": 54,
+    "solved": 54,
+    "correct": 8,
+    "accuracy": 0.14814814814814814,
+    "problems": {
+      "22": {
+        "run_idx": 0,
+        "final_answer": "4",
+        "gold_answer": "4",
+        "solved": true,
+        "correct": true
+      },
+      "15": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "9801",
+        "solved": true,
+        "correct": false
+      },
+      "40": {
+        "run_idx": 0,
+        "final_answer": "12269137",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": true
+      },
+      "6": {
+        "run_idx": 0,
+        "final_answer": "13920",
+        "gold_answer": "147744",
+        "solved": true,
+        "correct": false
+      },
+      "18": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0",
+        "solved": true,
+        "correct": true
+      },
+      "51": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "\\frac{2880}{1{,}793{,}363}",
+        "solved": true,
+        "correct": false
+      },
+      "33": {
+        "run_idx": 0,
+        "final_answer": "6",
+        "gold_answer": "9",
+        "solved": true,
+        "correct": false
+      },
+      "48": {
+        "run_idx": 0,
+        "final_answer": "S",
+        "gold_answer": "5842",
+        "solved": true,
+        "correct": false
+      },
+      "54": {
+        "run_idx": 0,
+        "final_answer": "1024",
+        "gold_answer": "896",
+        "solved": true,
+        "correct": false
+      },
+      "10": {
+        "run_idx": 0,
+        "final_answer": "a=33, b=57, c=69, d=83",
+        "gold_answer": "${a=15,\\quad b=87,\\quad c=63,\\quad d=79.}$",
+        "solved": true,
+        "correct": false
+      },
+      "27": {
+        "run_idx": 0,
+        "final_answer": "-\\dfrac{8103}{2}",
+        "gold_answer": "-\\frac{8103}{2}",
+        "solved": true,
+        "correct": false
+      },
+      "45": {
+        "run_idx": 0,
+        "final_answer": "5928",
+        "gold_answer": "5928",
+        "solved": true,
+        "correct": true
+      },
+      "3": {
+        "run_idx": 0,
+        "final_answer": "24",
+        "gold_answer": "1",
+        "solved": true,
+        "correct": false
+      },
+      "4": {
+        "run_idx": 0,
+        "final_answer": "1862458856",
+        "gold_answer": "184",
+        "solved": true,
+        "correct": false
+      },
+      "17": {
+        "run_idx": 0,
+        "final_answer": "sigma",
+        "gold_answer": "288",
+        "solved": true,
+        "correct": false
+      },
+      "20": {
+        "run_idx": 0,
+        "final_answer": "-\\dfrac{125}{12}",
+        "gold_answer": "\\frac{125}{12}",
+        "solved": true,
+        "correct": false
+      },
+      "42": {
+        "run_idx": 0,
+        "final_answer": "49",
+        "gold_answer": "28",
+        "solved": true,
+        "correct": false
+      },
+      "9": {
+        "run_idx": 0,
+        "final_answer": "176",
+        "gold_answer": "\\{a,b,c,d,e\\} = \\{55,49,88,31,21\\}",
+        "solved": true,
+        "correct": false
+      },
+      "53": {
+        "run_idx": 0,
+        "final_answer": "882",
+        "gold_answer": "882",
+        "solved": true,
+        "correct": true
+      },
+      "31": {
+        "run_idx": 0,
+        "final_answer": "\\text{Unable to determine}",
+        "gold_answer": "15898200",
+        "solved": true,
+        "correct": false
+      },
+      "34": {
+        "run_idx": 0,
+        "final_answer": "87^{17}",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "28": {
+        "run_idx": 0,
+        "final_answer": "1444",
+        "gold_answer": "44652 (p=122, q=3)",
+        "solved": true,
+        "correct": false
+      },
+      "1": {
+        "run_idx": 0,
+        "final_answer": "1302",
+        "gold_answer": "469",
+        "solved": true,
+        "correct": false
+      },
+      "39": {
+        "run_idx": 0,
+        "final_answer": "12269117",
+        "gold_answer": "12269137",
+        "solved": true,
+        "correct": false
+      },
+      "25": {
+        "run_idx": 0,
+        "final_answer": "370",
+        "gold_answer": "130",
+        "solved": true,
+        "correct": false
+      },
+      "12": {
+        "run_idx": 0,
+        "final_answer": "[64, 39, 8]_2",
+        "gold_answer": "$[64,39,8]_2$",
+        "solved": true,
+        "correct": false
+      },
+      "47": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "\\dfrac{2835}{6146678}",
+        "solved": true,
+        "correct": false
+      },
+      "49": {
+        "run_idx": 0,
+        "final_answer": "0.0679",
+        "gold_answer": "\\frac{965439299631293175}{14215144014981627904}",
+        "solved": true,
+        "correct": false
+      },
+      "37": {
+        "run_idx": 0,
+        "final_answer": "15651",
+        "gold_answer": "15593",
+        "solved": true,
+        "correct": false
+      },
+      "11": {
+        "run_idx": 0,
+        "final_answer": "2027025",
+        "gold_answer": "$2{,}027{,}025$",
+        "solved": true,
+        "correct": false
+      },
+      "26": {
+        "run_idx": 0,
+        "final_answer": "7",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": true
+      },
+      "44": {
+        "run_idx": 0,
+        "final_answer": "2025",
+        "gold_answer": "4050",
+        "solved": true,
+        "correct": false
+      },
+      "2": {
+        "run_idx": 0,
+        "final_answer": "\n\\begin{aligned}\n& (1, 1, 1), \\\\\n& (1, 1, 2), (1, 2, 1), (2, 1, 1), \\\\\n& (1, 2, 3), (2, 3, 1), (3, 1, 2), \\\\\n& (3, 4, 5), (4, 5, 3), (5, 3, 4).\n\\end{aligned}\n",
+        "gold_answer": "91666486036450",
+        "solved": true,
+        "correct": false
+      },
+      "23": {
+        "run_idx": 0,
+        "final_answer": "0",
+        "gold_answer": "0+0i",
+        "solved": true,
+        "correct": false
+      },
+      "14": {
+        "run_idx": 0,
+        "final_answer": "1",
+        "gold_answer": "421",
+        "solved": true,
+        "correct": false
+      },
+      "41": {
+        "run_idx": 0,
+        "final_answer": "1239678246",
+        "gold_answer": "42987601",
+        "solved": true,
+        "correct": false
+      },
+      "7": {
+        "run_idx": 0,
+        "final_answer": "97",
+        "gold_answer": "$(a,b,c) = (21,33,97) \\quad \\text{(in any order).}$",
+        "solved": true,
+        "correct": false
+      },
+      "19": {
+        "run_idx": 0,
+        "final_answer": "\\dfrac{7}{1441}",
+        "gold_answer": "\\frac{7}{1441}",
+        "solved": true,
+        "correct": false
+      },
+      "50": {
+        "run_idx": 0,
+        "final_answer": "5 - 2\\sqrt{5}",
+        "gold_answer": "\\frac{1}{3}",
+        "solved": true,
+        "correct": false
+      },
+      "32": {
+        "run_idx": 0,
+        "final_answer": "\\text{Unable to determine}",
+        "gold_answer": "<0, 1>,<65280,1082113920>,<65281, 2147450880>,<65282, 1082146816>,\n<65536, 2147516415>,<65537, 4295032832>,<65538, 2147450880>,\n<65792, 1065336960>,<65793, 2147450880>,<65794, 1065369600>",
+        "solved": true,
+        "correct": false
+      },
+      "35": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "24",
+        "solved": true,
+        "correct": false
+      },
+      "29": {
+        "run_idx": 0,
+        "final_answer": "42",
+        "gold_answer": "7",
+        "solved": true,
+        "correct": false
+      },
+      "38": {
+        "run_idx": 0,
+        "final_answer": "720",
+        "gold_answer": "2508",
+        "solved": true,
+        "correct": false
+      },
+      "0": {
+        "run_idx": 0,
+        "final_answer": "-1",
+        "gold_answer": "-1",
+        "solved": true,
+        "correct": true
+      },
+      "24": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "2",
+        "solved": true,
+        "correct": true
+      },
+      "13": {
+        "run_idx": 0,
+        "final_answer": "60750",
+        "gold_answer": "38256",
+        "solved": true,
+        "correct": false
+      },
+      "46": {
+        "run_idx": 0,
+        "final_answer": "359306107446",
+        "gold_answer": "1284945581705486809835426700",
+        "solved": true,
+        "correct": false
+      },
+      "5": {
+        "run_idx": 0,
+        "final_answer": "-207",
+        "gold_answer": "1799877895922108",
+        "solved": true,
+        "correct": false
+      },
+      "16": {
+        "run_idx": 0,
+        "final_answer": "645120",
+        "gold_answer": "652138905600",
+        "solved": true,
+        "correct": false
+      },
+      "21": {
+        "run_idx": 0,
+        "final_answer": "2",
+        "gold_answer": "3",
+        "solved": true,
+        "correct": false
+      },
+      "43": {
+        "run_idx": 0,
+        "final_answer": "42",
+        "gold_answer": "1200304",
+        "solved": true,
+        "correct": false
+      },
+      "52": {
+        "run_idx": 0,
+        "final_answer": "1.857406239972342",
+        "gold_answer": "\\frac{65}{57}",
+        "solved": true,
+        "correct": false
+      },
+      "30": {
+        "run_idx": 0,
+        "final_answer": "400",
+        "gold_answer": "496",
+        "solved": true,
+        "correct": false
+      },
+      "8": {
+        "run_idx": 0,
+        "final_answer": "33541",
+        "gold_answer": "$\\{a,b,c,d\\}=\\{29,78,89,111\\}.$",
+        "solved": true,
+        "correct": false
+      }
+    }
+  }
+}

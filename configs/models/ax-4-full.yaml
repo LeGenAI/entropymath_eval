@@ -1,0 +1,8 @@
+model: "ax4"
+base_url: "https://guest-api.sktax.chat/v1"
+api_key: "${SKTAX_API_KEY}"
+api_type: "openai"
+# Basic generation defaults; adjust if needed.
+generation_kwargs:
+  temperature: 0.3
+  max_tokens: -1

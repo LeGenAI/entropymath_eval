@@ -1,0 +1,8 @@
+model: deepseek/deepseek-v3.2-speciale
+base_url: https://openrouter.ai/api/v1
+api_key: ${OPENROUTER_API_KEY}
+temperature: 0.3
+max_tokens: 16000
+reasoning_effort: "high"
+max_turns: 16
+stop: ["Observation:", "<|call|>"]

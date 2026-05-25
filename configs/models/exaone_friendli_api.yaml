@@ -1,0 +1,11 @@
+model: LGAI-EXAONE/EXAONE-4.0.1-32B
+base_url: https://api.friendli.ai/serverless/v1
+api_key: ${FRIENDLI_API_KEY}
+default_headers:
+  X-Friendli-Team: Bjp3g7kKda1U
+sampling_params_locked: true
+temperature: 0.3
+max_tokens: -1
+max_turns: 16
+reasoning_effort: "high"
+stop: ["Observation:", "<|call|>"]

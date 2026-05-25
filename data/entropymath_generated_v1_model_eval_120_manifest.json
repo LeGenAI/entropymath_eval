@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-04-24T08:47:53.802483+00:00",
+  "difficulty_label_counts": {
+    "easy": 38,
+    "hard": 42,
+    "medium": 31,
+    "superhard": 9
+  },
+  "generation_counts": {
+    "0": 1,
+    "1": 12,
+    "10": 6,
+    "2": 23,
+    "3": 26,
+    "4": 17,
+    "5": 15,
+    "6": 5,
+    "7": 6,
+    "8": 3,
+    "9": 6
+  },
+  "intended_use": "Frozen paper-facing model-evaluation sample for EntropyMath-Generated-v1. Legacy pilot outputs should not be mixed into main model-evaluation evidence.",
+  "name": "entropymath_generated_v1_model_eval_120",
+  "operation_counts": {
+    "crossover": 23,
+    "crossover_easy": 23,
+    "crossover_hard": 15,
+    "mutation": 21,
+    "mutation_easy": 21,
+    "mutation_hard": 17
+  },
+  "output_jsonl": "data/entropymath_generated_v1_model_eval_120.jsonl",
+  "primary_protocol": {
+    "metric": "accuracy@1",
+    "secondary_metrics": [
+      "pass@3",
+      "consistency_gap"
+    ],
+    "solver": "direct_no_tool",
+    "temperature": "0 when accepted by provider; otherwise provider minimum"
+  },
+  "row_count": 120,
+  "source_csv": "/Users/imds/Desktop/icml_2026_entropymath/repo/data/public/evaluation_samples/model_eval_stratified_120.csv",
+  "unique_statement_sha256": 120
+}

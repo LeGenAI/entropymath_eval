@@ -1,0 +1,13 @@
+model: naver-hyperclovax/HyperCLOVAX-SEED-Think-32B
+base_url: http://localhost:8000/v1
+api_key: not-needed
+temperature: 0.3
+max_tokens: 4096
+max_turns: 16
+top_p: 0.0
+frequency_penalty: 0.0
+presence_penalty: 0.0
+stop:
+  - "[/PYTHON]"
+  - "Observation:"
+  - "[PYTHON]"

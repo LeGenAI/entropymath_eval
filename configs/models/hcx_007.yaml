@@ -1,0 +1,12 @@
+model: "HCX-007"
+base_url: "https://clovastudio.stream.ntruss.com/v3/chat-completions/HCX-007"
+api_key: "${CLOVA_STUDIO_API_KEY}"
+api_type: "clova"
+# Keep conversations short/stable to avoid multi-turn dropouts.
+max_turns: 16
+generation_kwargs:
+  temperature: 0.3
+  # HCX-007 uses maxCompletionTokens; keep it moderate to avoid quota/timeouts.
+  max_tokens: -1
+  thinking:
+    effort: "high"

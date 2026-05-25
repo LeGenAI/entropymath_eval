@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{caption}
+\captionsetup{font=small}
+
+\begin{document}
+
+\section*{Math Week 1 -- Model Summary}
+
+\rowcolors{2}{gray!5}{white}
+\begin{table}[h!]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Model} & \textbf{Total} & \textbf{Correct} & \textbf{Accuracy} & \textbf{Avg. Turns} & \textbf{Tool Use} \\
+\midrule
+gpt-oss-20b                  & 55 & 25 & 0.455 & 8.24 & 0.96 \\
+gemma-3-27b                  & 55 & 10 & 0.182 & 8.16 & 0.80 \\
+qwen3-30b-a3b-2507           & 55 & 23 & 0.418 & 3.83 & 0.65 \\
+deepseek-r1-distill-qwen-32b & 55 & 13 & 0.236 & 2.50 & 0.30 \\
+a.x-4.0-light                & 55 &  5 & 0.091 & 1.31 & 0.15 \\
+\midrule
+\textbf{Best (acc.)}         & {} & {} & \textbf{0.455} & {}   & {} \\
+\bottomrule
+\end{tabular}
+\caption{Overall performance summary. Tool use is the fraction of runs that invoked any tool. Accuracies and averages rounded to three decimals. All totals aligned to 55 problems.}
+\end{table}
+
+\bigskip
+
+\section*{Performance by Problem Prefix}
+
+\rowcolors{2}{gray!5}{white}
+\begin{table}[h!]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Prefix} & \textbf{gpt-oss-20b} & \textbf{gemma-3-27b} & \textbf{qwen3-30b-a3b} & \textbf{deepseek-r1-qwen} & \textbf{a.x-4.0-light} \\\midrule
+AC  & $2/3$  (0.67) & $1/3$  (0.33) & $2/3$  (0.67) & $2/3$  (0.67) & $0/3$  (0.00) \\
+BSK & $2/4$  (0.50) & $1/4$  (0.25) & $2/4$  (0.50) & $1/4$  (0.25) & $0/4$  (0.00) \\
+HEL & $6/11$ (0.55) & $2/11$ (0.18) & $5/11$ (0.45) & $1/11$ (0.09) & $1/11$ (0.09) \\
+JHB & $7/20$ (0.35) & $2/20$ (0.10) & $7/20$ (0.35) & $3/20$ (0.15) & $1/20$ (0.05) \\
+JMA & $0/3$  (0.00) & $0/3$  (0.00) & $0/3$  (0.00) & $1/3$  (0.33) & $0/3$  (0.00) \\
+KKH & $1/4$  (0.25) & $0/4$  (0.00) & $1/4$  (0.25) & $2/4$  (0.50) & $0/4$  (0.00) \\
+WSJ & $7/10$ (0.70) & $4/10$ (0.40) & $6/10$ (0.60) & $4/10$ (0.40) & $3/10$ (0.30) \\\midrule
+\textbf{Overall} & $25/54$ (0.46) & $10/55$ (0.18) & $23/54$ (0.43) & $13/54$ (0.24) & $5/55$ (0.09) \\
+\bottomrule
+\end{tabular}
+\caption{Accuracy grouped by problem prefix (researcher initials). Overall aggregates all prefixes per model.}
+\end{table}
+
+\bigskip
+
+\section*{Domestic Models (Table 3)}
+
+\rowcolors{2}{gray!5}{white}
+\begin{table}[h!]
+\centering
+\begin{tabular}{lrrrrr}
+\toprule
+\textbf{Model} & \textbf{Total} & \textbf{Correct} & \textbf{Accuracy} & \textbf{Avg. Turns} & \textbf{Tool Use} \\\midrule
+a.x-4.0-light & 55 & 5 & 0.091 & 1.31 & 0.15 \\\bottomrule
+\end{tabular}
+\caption{Domestic (Korean) model comparison. Currently only the a.x-4.0-light experiment is included.}
+\end{table}
+
+\end{document}

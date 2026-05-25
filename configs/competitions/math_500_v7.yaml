@@ -1,0 +1,4 @@
+name: math_500_v7
+dataset_path: HuggingFaceH4/math-500
+n_problems: 10
+split: test

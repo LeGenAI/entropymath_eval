@@ -1,0 +1,5 @@
+name: problems_will_be_open
+dataset_path: LeBrony/EntropyMath_seed_open_v1
+subset: train
+n_problems: 1
+start_idx: 1

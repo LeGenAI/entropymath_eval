@@ -1,0 +1,7 @@
+model: "deepseek-r1-distill-qwen-32b"
+base_url: "http://localhost:1234/v1"
+api_key: "not-needed"
+api_type: "openai"
+temperature: 0.3
+max_tokens: 4096
+reasoning_effort: "high"

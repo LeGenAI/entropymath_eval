@@ -1,0 +1,268 @@
+{
+  "model_count": 3,
+  "models": {
+    "direct_no_tool/anthropic/claude-haiku-4.5": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.7288135593220338,
+          "accuracy_at_1_ci95": [
+            0.6271186440677966,
+            0.847457627118644
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.0,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.7288135593220338,
+          "accuracy_at_1_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.0,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.7288135593220338,
+          "accuracy_at_1_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.0,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.7288135593220338,
+        "accuracy_at_1_ci95": [
+          0.6271186440677966,
+          0.8305084745762712
+        ],
+        "answer_extraction_failure_rate": 0.0,
+        "consistency_gap": 0.0,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.7288135593220338,
+        "pass_at_k_ci95": [
+          0.6101694915254238,
+          0.8305084745762712
+        ],
+        "problem_count": 59,
+        "python_error_rate": 0.0,
+        "run_count": 177,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 177
+      }
+    },
+    "direct_no_tool/google/gemini-3.1-flash-lite-preview": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.6101694915254238,
+          "accuracy_at_1_ci95": [
+            0.4745762711864407,
+            0.7288135593220338
+          ],
+          "answer_extraction_failure_rate": 0.1638418079096045,
+          "consistency_gap": 0.0847457627118644,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.6949152542372882,
+          "pass_at_k_ci95": [
+            0.576271186440678,
+            0.7966101694915254
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.6101694915254238,
+          "accuracy_at_1_ci95": [
+            0.4915254237288136,
+            0.7288135593220338
+          ],
+          "answer_extraction_failure_rate": 0.1638418079096045,
+          "consistency_gap": 0.0847457627118644,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.6949152542372882,
+          "pass_at_k_ci95": [
+            0.576271186440678,
+            0.8135593220338984
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.6101694915254238,
+          "accuracy_at_1_ci95": [
+            0.4915254237288136,
+            0.7288135593220338
+          ],
+          "answer_extraction_failure_rate": 0.1638418079096045,
+          "consistency_gap": 0.0847457627118644,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.6949152542372882,
+          "pass_at_k_ci95": [
+            0.576271186440678,
+            0.8135593220338984
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.6101694915254238,
+        "accuracy_at_1_ci95": [
+          0.4915254237288136,
+          0.7288135593220338
+        ],
+        "answer_extraction_failure_rate": 0.1638418079096045,
+        "consistency_gap": 0.0847457627118644,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.6949152542372882,
+        "pass_at_k_ci95": [
+          0.576271186440678,
+          0.7966101694915254
+        ],
+        "problem_count": 59,
+        "python_error_rate": 0.0,
+        "run_count": 177,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 177
+      }
+    },
+    "direct_no_tool/openai/gpt-5.4-mini": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.6949152542372882,
+          "accuracy_at_1_ci95": [
+            0.576271186440678,
+            0.8135593220338984
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.03389830508474567,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.847457627118644
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.6949152542372882,
+          "accuracy_at_1_ci95": [
+            0.576271186440678,
+            0.7966101694915254
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.03389830508474567,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.8305084745762712
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.6949152542372882,
+          "accuracy_at_1_ci95": [
+            0.576271186440678,
+            0.8135593220338984
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.03389830508474567,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.7288135593220338,
+          "pass_at_k_ci95": [
+            0.6101694915254238,
+            0.847457627118644
+          ],
+          "problem_count": 59,
+          "python_error_rate": 0.0,
+          "run_count": 177,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.6949152542372882,
+        "accuracy_at_1_ci95": [
+          0.576271186440678,
+          0.8135593220338984
+        ],
+        "answer_extraction_failure_rate": 0.0,
+        "consistency_gap": 0.03389830508474567,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.7288135593220338,
+        "pass_at_k_ci95": [
+          0.6101694915254238,
+          0.8305084745762712
+        ],
+        "problem_count": 59,
+        "python_error_rate": 0.0,
+        "run_count": 177,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 177
+      }
+    }
+  },
+  "outputs_dir": "outputs/external_math500_treatment",
+  "result_file_count": 531
+}

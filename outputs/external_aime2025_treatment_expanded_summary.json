@@ -1,0 +1,268 @@
+{
+  "model_count": 3,
+  "models": {
+    "direct_no_tool/anthropic/claude-haiku-4.5": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5384615384615384
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.043956043956043966,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4835164835164835,
+          "pass_at_k_ci95": [
+            0.38461538461538464,
+            0.5824175824175825
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5494505494505495
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.043956043956043966,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4835164835164835,
+          "pass_at_k_ci95": [
+            0.38461538461538464,
+            0.5934065934065934
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5384615384615384
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.043956043956043966,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4835164835164835,
+          "pass_at_k_ci95": [
+            0.37362637362637363,
+            0.5824175824175825
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.43956043956043955,
+        "accuracy_at_1_ci95": [
+          0.34065934065934067,
+          0.5384615384615384
+        ],
+        "answer_extraction_failure_rate": 0.0,
+        "consistency_gap": 0.043956043956043966,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.4835164835164835,
+        "pass_at_k_ci95": [
+          0.37362637362637363,
+          0.5824175824175825
+        ],
+        "problem_count": 91,
+        "python_error_rate": 0.0,
+        "run_count": 303,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 303
+      }
+    },
+    "direct_no_tool/google/gemini-3.1-flash-lite-preview": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5384615384615384
+          ],
+          "answer_extraction_failure_rate": 0.1551155115511551,
+          "consistency_gap": 0.1208791208791209,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.5604395604395604,
+          "pass_at_k_ci95": [
+            0.46153846153846156,
+            0.6703296703296703
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5384615384615384
+          ],
+          "answer_extraction_failure_rate": 0.1551155115511551,
+          "consistency_gap": 0.1208791208791209,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.5604395604395604,
+          "pass_at_k_ci95": [
+            0.46153846153846156,
+            0.6703296703296703
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.43956043956043955,
+          "accuracy_at_1_ci95": [
+            0.34065934065934067,
+            0.5494505494505495
+          ],
+          "answer_extraction_failure_rate": 0.1551155115511551,
+          "consistency_gap": 0.1208791208791209,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.5604395604395604,
+          "pass_at_k_ci95": [
+            0.45054945054945056,
+            0.6593406593406593
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.43956043956043955,
+        "accuracy_at_1_ci95": [
+          0.32967032967032966,
+          0.5384615384615384
+        ],
+        "answer_extraction_failure_rate": 0.1551155115511551,
+        "consistency_gap": 0.1208791208791209,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.5604395604395604,
+        "pass_at_k_ci95": [
+          0.45054945054945056,
+          0.6593406593406593
+        ],
+        "problem_count": 91,
+        "python_error_rate": 0.0,
+        "run_count": 303,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 303
+      }
+    },
+    "direct_no_tool/openai/gpt-5.4-mini": {
+      "by_difficulty_label": {
+        "unknown": {
+          "accuracy_at_1": 0.3956043956043956,
+          "accuracy_at_1_ci95": [
+            0.2967032967032967,
+            0.5054945054945055
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.09890109890109894,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4945054945054945,
+          "pass_at_k_ci95": [
+            0.3956043956043956,
+            0.5934065934065934
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_generation_bucket": {
+        "unknown": {
+          "accuracy_at_1": 0.3956043956043956,
+          "accuracy_at_1_ci95": [
+            0.2857142857142857,
+            0.4945054945054945
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.09890109890109894,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4945054945054945,
+          "pass_at_k_ci95": [
+            0.38461538461538464,
+            0.6043956043956044
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "by_operation": {
+        "unknown": {
+          "accuracy_at_1": 0.3956043956043956,
+          "accuracy_at_1_ci95": [
+            0.2857142857142857,
+            0.4945054945054945
+          ],
+          "answer_extraction_failure_rate": 0.0,
+          "consistency_gap": 0.09890109890109894,
+          "gold_missing_rate": 0.0,
+          "pass_at_k": 0.4945054945054945,
+          "pass_at_k_ci95": [
+            0.3956043956043956,
+            0.5934065934065934
+          ],
+          "problem_count": 91,
+          "python_error_rate": 0.0,
+          "run_count": 303,
+          "tool_use_rate": 0.0
+        }
+      },
+      "overall": {
+        "accuracy_at_1": 0.3956043956043956,
+        "accuracy_at_1_ci95": [
+          0.3076923076923077,
+          0.4945054945054945
+        ],
+        "answer_extraction_failure_rate": 0.0,
+        "consistency_gap": 0.09890109890109894,
+        "gold_missing_rate": 0.0,
+        "pass_at_k": 0.4945054945054945,
+        "pass_at_k_ci95": [
+          0.3956043956043956,
+          0.5934065934065934
+        ],
+        "problem_count": 91,
+        "python_error_rate": 0.0,
+        "run_count": 303,
+        "tool_use_rate": 0.0
+      },
+      "solver_protocol_counts": {
+        "direct_no_tool": 303
+      }
+    }
+  },
+  "outputs_dir": "outputs/external_aime2025_treatment",
+  "result_file_count": 909
+}

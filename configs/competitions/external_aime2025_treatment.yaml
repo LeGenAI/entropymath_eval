@@ -1,0 +1,12 @@
+name: external_aime2025_treatment
+dataset_path: json
+data_files: /Users/imds/Desktop/icml_2026_entropymath/repo/data/eval/external/aime2025_treatment_101.jsonl
+subset: train
+n_problems: 101
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "EntropyMath-generated children of aime2025 seeds (combos a+b+c[partial g2]+d+e, 10 generations each)"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

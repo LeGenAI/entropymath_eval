@@ -1,0 +1,12 @@
+name: external_math500_control
+dataset_path: json
+data_files: /Users/imds/Desktop/icml_2026_entropymath/repo/data/eval/external/math500_control_10.jsonl
+subset: train
+n_problems: 10
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \boxed{}."
+sample_source: "External benchmark seed (10 hand-curated original problems)"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

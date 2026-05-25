@@ -1,0 +1,5 @@
+name: entropy_math_sat
+dataset_path: LeBrony/EntropyMath_SAT
+subset: train
+n_problems: 50
+start_idx: 0

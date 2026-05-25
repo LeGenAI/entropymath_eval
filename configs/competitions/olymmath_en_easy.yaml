@@ -1,0 +1,5 @@
+name: olympmath_en_easy
+dataset_path: RUC-AIBOX/OlymMATH
+dataset_name: en-easy
+subset: test
+n_problems: 10

@@ -1,0 +1,6 @@
+name: KOR_CSAT_26_KOR
+dataset_path: LeBrony/KOR_CSAT_26_KOR
+subset: train
+n_problems: 12
+start_idx: 0
+

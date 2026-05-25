@@ -1,0 +1,6 @@
+model: axk1
+api_key: not-needed
+base_url: http://10.0.2.114:10254/v1
+temperature: 0.3
+max_tokens: -1
+max_turns: 30

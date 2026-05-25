@@ -1,0 +1,16 @@
+model: depu4w0usr5fkjg  # Friendli dedicated endpoint ID; required for auth
+base_url: https://api.friendli.ai/dedicated/v1
+api_key: ${FRIENDLI_API_KEY}
+default_headers:
+  X-Friendli-Team: Bjp3g7kKda1U
+  X-Friendli-Endpoint: depcc3oztd80ijm
+sampling_params_locked: true
+max_tokens: -1
+temperature: 0.6
+top_p: 0.95
+top_k: 20
+max_turns: 30
+parse_reasoning: true
+chat_template_kwargs:
+  enable_thinking: true
+stop: ["Observation:", "<|call|>"]

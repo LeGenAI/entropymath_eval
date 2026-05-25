@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{caption}
+\usepackage{adjustbox}
+\captionsetup{font=small}
+\definecolor{score3}{RGB}{144, 238, 144}
+\definecolor{score2}{RGB}{255, 255, 224}
+\definecolor{score1}{RGB}{255, 218, 185}
+\definecolor{score0}{RGB}{255, 182, 193}
+
+\begin{document}
+\section*{Math Evaluation Report}
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{l c c cccccccccc}
+\toprule
+\textbf{Model} & \textbf{Acc} & \textbf{Pass@3}  & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} \\
+\midrule
+\multicolumn{13}{l}{\textbf{API / Others}} \\
+\midrule
+Claude-Opus-4.5 & 94.1\% & 100.0\% & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score1} 1/2 & - & - & - & - \\
+Grok-4.1-fast & 90.0\% & 100.0\% & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score2} 2/3 & \cellcolor{score1} 1/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+GPT-5.1 (high)& 86.7\% & 90.0\% & \cellcolor{score2} 2/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+Gemini-3-Pro-Preview & 83.3\% & 90.0\% & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score1} 1/3 & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+Deepseek-V3.2 & 82.8\% & 90.0\% & \cellcolor{score2} 2/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score1} 1/2 & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+\midrule
+\multicolumn{13}{l}{\textbf{Soverign 5 - KR}} \\
+\midrule
+Solar-Pro-2 (31B)(high) & 53.3\% & 70.0\% & \cellcolor{score1} 1/3 & \cellcolor{score3} 3/3 & \cellcolor{score2} 2/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score1} 1/3 & \cellcolor{score3} 3/3 \\
+Llama-VARCO-8B-Instruct & 33.3\% & 100.0\% & - & \cellcolor{score1} 1/3 & - & - & - & - & - & - & - & \cellcolor{score1} 1/3 \\
+HCX-007(high) & 26.7\% & 40.0\% & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score1} 1/3 & \cellcolor{score2} 2/3 & \cellcolor{score2} 2/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 \\
+A.X-4.0 (72B) & 23.3\% & 30.0\% & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score2} 2/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score2} 2/3 \\
+EXAONE-4.0.1-32B (high) & 8.7\% & 11.1\% & - & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/1 & \cellcolor{score0} 0/1 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score2} 2/3 \\
+\midrule
+\multicolumn{13}{l}{\textbf{Local - US}} \\
+\midrule
+GPT-oss-20B (high) & 82.1\% & 80.0\% & \cellcolor{score2} 2/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/1 & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+Gemma-3-27B & 26.7\% & 40.0\% & \cellcolor{score0} 0/3 & \cellcolor{score2} 2/3 & \cellcolor{score0} 0/3 & \cellcolor{score2} 2/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score1} 1/3 \\
+\midrule
+\multicolumn{13}{l}{\textbf{Local - CN}} \\
+\midrule
+Deepseek-R1-distill-Qwen-32B (high) & 59.3\% & 66.7\% & - & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/3 & \cellcolor{score1} 1/3 & \cellcolor{score3} 3/3 \\
+Qwen3-30B-A3B-2507 & 57.7\% & 50.0\% & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/3 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 & \cellcolor{score0} 0/1 & \cellcolor{score0} 0/3 & \cellcolor{score0} 0/1 & \cellcolor{score3} 3/3 & \cellcolor{score3} 3/3 \\
+\bottomrule
+\end{tabular}
+\caption{Pass rates (Correct Runs / Total Runs). Green=3/3, Yellow=2/3, Orange=1/3, Red=0/3.}
+\end{table}
+\end{document}

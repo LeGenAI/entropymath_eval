@@ -1,0 +1,79 @@
+name: entropymath_v1_eval_panel_public
+description: >
+  Sanitized paper-facing model panel for EntropyMath-Generated-v1. This file is
+  safe to share because it records display metadata and protocol choices only;
+  provider credentials and private endpoint headers remain in local model YAMLs.
+competition: entropymath_generated_v1_model_eval_120
+primary_protocol:
+  solver: direct_no_tool
+  repeats: 1
+  temperature: 0.0
+  fallback_temperature: provider_minimum
+  max_tokens: provider_or_model_config_default
+secondary_protocol:
+  solver: tool_assisted
+  repeats: 3
+  temperature: 0.0
+  report:
+    - pass@3
+    - consistency_gap
+    - tool_use_rate
+    - python_error_rate
+    - answer_extraction_failure_rate
+models:
+  - config_name: openrouter_gpt_5_2
+    model_display_name: GPT-5.2
+    provider: OpenRouter
+    endpoint_type: chat_completions_proxy
+    cohort: frontier
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: openrouter_gemini_3_pro_preview
+    model_display_name: Gemini 3 Pro Preview
+    provider: OpenRouter
+    endpoint_type: chat_completions_proxy
+    cohort: frontier
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: openrouter_claude_opus_4_5
+    model_display_name: Claude Opus 4.5
+    provider: OpenRouter
+    endpoint_type: chat_completions_proxy
+    cohort: frontier
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: openrouter_deepseek_v3_2_speciale
+    model_display_name: DeepSeek V3.2 Speciale
+    provider: OpenRouter
+    endpoint_type: chat_completions_proxy
+    cohort: frontier_open
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: k-exaone_friendli_api
+    model_display_name: K-EXAONE-236B-A23B
+    provider: Friendli
+    endpoint_type: serverless_chat_completions
+    cohort: korean_open
+    decoding: provider_locked
+    tool_solver_enabled: true
+  - config_name: solar-open-100b
+    model_display_name: Solar-Open-100B
+    provider: Upstage
+    endpoint_type: chat_completions
+    cohort: korean_open
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: ax-k1
+    model_display_name: AX-K1
+    provider: Local or configured endpoint
+    endpoint_type: chat_completions
+    cohort: korean
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true
+  - config_name: hcx_007
+    model_display_name: HCX-007
+    provider: NAVER Cloud
+    endpoint_type: clova_studio_chat
+    cohort: korean
+    decoding: deterministic_when_supported
+    tool_solver_enabled: true

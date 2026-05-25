@@ -1,0 +1,12 @@
+name: external_olympiadbench_en_treatment
+dataset_path: json
+data_files: /Users/imds/Desktop/icml_2026_entropymath/repo/data/eval/external/olympiadbench_en_treatment_PLACEHOLDER.jsonl
+subset: train
+# n_problems and data_files updated after Step 4 builds JSONL
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \boxed{}."
+sample_source: "EntropyMath-generated children of olympiadbench_en seeds (combo_a + combo_b)"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

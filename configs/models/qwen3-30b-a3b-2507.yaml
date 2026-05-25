@@ -1,0 +1,7 @@
+model: qwen/qwen3-30b-a3b-2507
+base_url: http://localhost:1234/v1
+api_key: not-needed
+temperature: 0.3
+max_tokens: 4096
+max_turns: 16
+stop: ["Observation:", "<|call|>"]

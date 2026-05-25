@@ -1,0 +1,6 @@
+name: math_week1
+dataset_path: json
+data_files: ../problems/main_week_1.json
+subset: train
+n_problems: 10
+start_idx: 2

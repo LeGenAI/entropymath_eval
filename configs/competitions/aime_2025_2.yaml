@@ -1,0 +1,6 @@
+name: aime_2025_2
+dataset_path: opencompass/AIME2025
+dataset_name: AIME2025-II
+subset: test
+n_problems: 1
+start_idx: 12

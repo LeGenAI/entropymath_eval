@@ -1,0 +1,7 @@
+model: kakaocorp/kanana-2-30b-a3b-thinking
+base_url: https://556cm57612nbb8-8000.proxy.runpod.net/v1
+api_key: dummy
+temperature: 0.3
+max_tokens: 4096
+max_turns: 16
+stop: ["Observation:", "<|call|>"]

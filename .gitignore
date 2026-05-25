@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and runtime scratch
+logs/
+*.log
+tmp/
+temp/
+
+# Model and dependency caches
+models/.cache/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Build artifacts
+build/
+dist/
+
+# Local checkout of the HCX vLLM plugin. Keep it as a separate repo/submodule.
+hcx-vllm-plugin/
+
+# Raw per-problem evaluation traces can be regenerated.
+outputs/*/*/
+outputs_nrepeats3/*/*/
+
+# Keep compact summaries and reports.
+!outputs/*_summary.json
+!outputs/*_expanded_summary.json
+!outputs/math_week1/summary.json
+!outputs/math_week1/summary_turns.json
+!outputs/math_week1/summary_combined.tex
+!outputs/problems_will_be_open/analysis_report.tex
+!outputs_nrepeats3/entropymath_generated_v1_model_eval_120/direct_no_tool/combined_summary_flat.csv

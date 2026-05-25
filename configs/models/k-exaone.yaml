@@ -1,0 +1,4 @@
+model: lgai/k-exaone-236b-a23b
+api_key: ${BIZROUTER_API_KEY}
+base_url: https://api.bizrouter.ai/v1/
+sampling_params_locked: true

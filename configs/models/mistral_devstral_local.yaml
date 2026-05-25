@@ -1,0 +1,7 @@
+model: mistralai/devstral-small-2507
+base_url: http://localhost:1234/v1
+api_key: not-needed
+temperature: 0.3
+max_tokens: 16000
+max_turns: 30
+stop: ["Observation:", "<|call|>"]
