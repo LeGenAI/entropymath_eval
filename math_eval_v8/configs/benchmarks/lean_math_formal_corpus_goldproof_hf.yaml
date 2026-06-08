@@ -1,0 +1,13 @@
+name: lean_math_formal_corpus_goldproof
+dataset_path: iiis-lean/lean-math-formal-corpus
+split: train
+require_nonempty_fields:
+  - fl_proof
+require_compile_success: true
+default_imports:
+  - import Mathlib
+  - import Aesop
+  - set_option maxHeartbeats 0
+use_row_header: true
+lean_project_path: null
+lean_timeout_s: 60

@@ -1,0 +1,10 @@
+name: minif2f_lean4_test
+dataset_path: brando/minif2f-lean4
+split: test
+default_imports:
+  - import Mathlib
+  - import Aesop
+  - set_option maxHeartbeats 0
+use_row_header: false
+lean_project_path: null
+lean_timeout_s: 60

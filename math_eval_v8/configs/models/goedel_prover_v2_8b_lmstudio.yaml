@@ -1,0 +1,8 @@
+model: goedel-prover-v2-8b
+base_url: http://localhost:5678/v1
+api_key: not-needed
+temperature: 0.2
+top_p: 1.0
+max_tokens: 8192
+request_timeout: 600
+skip_system_prompt: true

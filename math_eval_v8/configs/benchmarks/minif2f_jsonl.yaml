@@ -1,0 +1,9 @@
+name: minif2f_lean4_jsonl
+jsonl_path: ../data/minif2f_lean4.jsonl
+default_imports:
+  - import Mathlib
+  - import Aesop
+  - set_option maxHeartbeats 0
+use_row_header: false
+lean_project_path: null
+lean_timeout_s: 60

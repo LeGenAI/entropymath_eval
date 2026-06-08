@@ -1,0 +1,3 @@
+models:
+  - configs/models/goedel_prover_v2_8b_lmstudio.yaml
+  - configs/models/bfs_prover_v2_7b_lmstudio.yaml

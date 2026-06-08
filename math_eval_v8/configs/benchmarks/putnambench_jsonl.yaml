@@ -1,0 +1,6 @@
+name: putnambench_lean4_jsonl
+jsonl_path: ../data/putnambench_lean4.jsonl
+default_imports:
+  - import Mathlib
+lean_project_path: null
+lean_timeout_s: 120
