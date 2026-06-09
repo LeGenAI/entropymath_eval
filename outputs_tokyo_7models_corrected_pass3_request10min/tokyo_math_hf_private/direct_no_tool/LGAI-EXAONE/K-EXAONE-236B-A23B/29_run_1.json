@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn the cubic tangent problem, the special value satisfying the area-ratio\ncondition is\n\\[\nk=\\frac{5\\sqrt3}{12}.\n\\]\nInstead of giving \\(k\\), compute the integer\n\\[\n\\frac{(12k)^2}{3}.\n\\]",
+  "final_answer": "25",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nWe are given that $ k = \\frac{5\\sqrt{3}}{12} $. We are to compute the integer value of:\n\n$$\n\\frac{(12k)^2}{3}.\n$$\n\n---\n\n### Step 1: Compute $ 12k $\n\n$$\n12k = 12 \\cdot \\frac{5\\sqrt{3}}{12} = 5\\sqrt{3}.\n$$\n\n---\n\n### Step 2: Square $ 12k $\n\n$$\n(12k)^2 = (5\\sqrt{3})^2 = 5^2 \\cdot (\\sqrt{3})^2 = 25 \\cdot 3 = 75.\n$$\n\n---\n\n### Step 3: Divide by 3\n\n$$\n\\frac{(12k)^2}{3} = \\frac{75}{3} = 25.\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{25}\n$$"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 149,
+    "completion_tokens": 486,
+    "total_tokens": 635
+  },
+  "elapsed_time_sec": 3.1518380641937256,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 29,
+  "sample_id": 29,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "25",
+  "sample_metadata": {
+    "no": 30,
+    "ID": "TOKYO-2026-HUMANITIES-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:18:17.018067+00:00"
+  }
+}

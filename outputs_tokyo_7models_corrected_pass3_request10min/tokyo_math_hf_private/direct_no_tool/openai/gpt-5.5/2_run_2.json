@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn the setting of the original midpoint-angle problem, the condition \\(q=1/3\\)\nleads to a positive value \\(p\\) satisfying\n\\[\np=3-2\\sqrt2.\n\\]\nInstead of giving this irrational value, compute the integer\n\\[\nN=p+\\frac1p.\n\\]",
+  "final_answer": "6",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{6}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 115,
+    "total_tokens": 293
+  },
+  "elapsed_time_sec": 5.245467901229858,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 2,
+  "sample_id": 2,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "6",
+  "sample_metadata": {
+    "no": 3,
+    "ID": "TOKYO-2024-HUMANITIES-3",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "openai/gpt-5.5",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:46:29.756850+00:00"
+  }
+}

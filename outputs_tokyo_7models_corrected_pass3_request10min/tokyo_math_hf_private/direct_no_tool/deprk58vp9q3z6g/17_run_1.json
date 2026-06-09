@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "2",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "To determine the number of positive integers \\( n \\) for which \\( h(n) = n^2 + 12n - 12 \\) is a perfect square, we start by setting \\( h(n) = k^2 \\) for some integer \\( k \\). This gives the equation:\n\n\\[\nn^2 + 12n - 12 = k^2.\n\\]\n\nRearranging terms, we get:\n\n\\[\nn^2 + 12n - (k^2 + 12) = 0.\n\\]\n\nThis is a quadratic equation in \\( n \\). For \\( n \\) to be an integer, the discriminant must be a perfect square. The discriminant \\( D \\) is:\n\n\\[\nD = 12^2 - 4 \\cdot 1 \\cdot (-(k^2 + 12)) = 144 + 4(k^2 + 12) = 4k^2 + 192.\n\\]\n\nFor \\( D \\) to be a perfect square, let \\( D = m^2 \\) for some integer \\( m \\). Then:\n\n\\[\n4k^2 + 192 = m^2 \\implies m^2 - 4k^2 = 192.\n\\]\n\nThis is a difference of squares, which factors as:\n\n\\[\n(m - 2k)(m + 2k) = 192.\n\\]\n\nWe need to find pairs of factors of 192 such that both factors are even (since \\( m - 2k \\) and \\( m + 2k \\) must be even). The factor pairs of 192 are:\n\n\\[\n(1, 192), (2, 96), (3, 64), (4, 48), (6, 32), (8, 24), (12, 16).\n\\]\n\nWe check each pair to see if both factors are even:\n\n- \\( (1, 192) \\): 1 is odd.\n- \\( (2, 96) \\): Both are even.\n- \\( (3, 64) \\): 3 is odd.\n- \\( (4, 48) \\): Both are even.\n- \\( (6, 32) \\): Both are even.\n- \\( (8, 24) \\): Both are even.\n- \\( (12, 16) \\): Both are even.\n\nThe valid pairs are \\( (2, 96) \\), \\( (4, 48) \\), \\( (6, 32) \\), and \\( (8, 24) \\). For each pair, we solve for \\( k \\) and \\( m \\):\n\n1. \\( (2, 96) \\):\n   \\[\n   m - 2k = 2 \\quad \\text{and} \\quad m + 2k = 96 \\implies m = 49, \\, k = 24.\n   \\]\n\n2. \\( (4, 48) \\):\n   \\[\n   m - 2k = 4 \\quad \\text{and} \\quad m + 2k = 48 \\implies m = 26, \\, k = 11.\n   \\]\n\n3. \\( (6, 32) \\):\n   \\[\n   m - 2k = 6 \\quad \\text{and} \\quad m + 2k = 32 \\implies m = 19, \\, k = 7.\n   \\]\n\n4. \\( (8, 24) \\):\n   \\[\n   m - 2k = 8 \\quad \\text{and} \\quad m + 2k = 24 \\implies m = 16, \\, k = 4.\n   \\]\n\nFor each \\( k \\), we solve the quadratic equation \\( n^2 + 12n - (k^2 + 12) = 0 \\):\n\n1. \\( k = 24 \\):\n   \\[\n   n^2 + 12n - 600 = 0 \\implies n = \\frac{-12 \\pm 60}{2} \\implies n = 24 \\text{ or } -30 \\quad (\\text{only } n = 24 \\text{ is positive}).\n   \\]\n\n2. \\( k = 11 \\):\n   \\[\n   n^2 + 12n - 125 = 0 \\implies n = \\frac{-12 \\pm 17}{2} \\implies n = 2.5 \\text{ or } -15.5 \\quad (\\text{no positive integer solutions}).\n   \\]\n\n3. \\( k = 7 \\):\n   \\[\n   n^2 + 12n - 55 = 0 \\implies n = \\frac{-12 \\pm 13}{2} \\implies n = 0.5 \\text{ or } -12.5 \\quad (\\text{no positive integer solutions}).\n   \\]\n\n4. \\( k = 4 \\):\n   \\[\n   n^2 + 12n - 28 = 0 \\implies n = \\frac{-12 \\pm 14}{2} \\implies n = 1 \\text{ or } -13 \\quad (\\text{only } n = 1 \\text{ is positive}).\n   \\]\n\nThus, the positive integers \\( n \\) for which \\( h(n) \\) is a perfect square are \\( n = 1 \\) and \\( n = 24 \\). Therefore, the number of such integers is:\n\n\\[\n\\boxed{2}\n\\]"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 660,
+    "completion_tokens": 1181,
+    "total_tokens": 1841
+  },
+  "elapsed_time_sec": 3.2446908950805664,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deprk58vp9q3z6g",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T04:37:53.139057+00:00"
+  }
+}

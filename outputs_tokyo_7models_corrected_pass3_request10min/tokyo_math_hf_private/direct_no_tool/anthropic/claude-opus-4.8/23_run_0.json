@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn the cubic tangent problem, the special value satisfying the area-ratio\ncondition is\n\\[\nk=\\frac{5\\sqrt3}{12}.\n\\]\nInstead of giving \\(k\\), compute the integer\n\\[\n\\frac{(12k)^2}{3}.\n\\]",
+  "final_answer": "25",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "(12k)² = (5√3)² = 75. Divide by 3 = 25.\n\n\\boxed{25}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 37,
+    "total_tokens": 287
+  },
+  "elapsed_time_sec": 1.4504590034484863,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 23,
+  "sample_id": 23,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "25",
+  "sample_metadata": {
+    "no": 24,
+    "ID": "TOKYO-2026-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:12:03.351704+00:00"
+  }
+}

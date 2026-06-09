@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA maximum area has value \\(100\\sqrt8\\). Write this value in the form\n\\[\n\\frac{p\\sqrt q}{r},\n\\]\nwhere \\(p,q,r\\) are positive integers, \\(q\\) is squarefree, and\n\\(\\gcd(p,r)=1\\). Find \\(p+q+r\\).",
+  "final_answer": null,
+  "history": [
+    {
+      "role": "assistant",
+      "content": "203"
+    }
+  ],
+  "solved": false,
+  "token_usage": {
+    "prompt_tokens": 169,
+    "completion_tokens": 420,
+    "total_tokens": 589
+  },
+  "elapsed_time_sec": 8.880099058151245,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "missing_boxed",
+  "id": 22,
+  "sample_id": 22,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "203",
+  "sample_metadata": {
+    "no": 23,
+    "ID": "TOKYO-2026-SCIENCE-3",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T08:32:19.816533+00:00"
+  }
+}

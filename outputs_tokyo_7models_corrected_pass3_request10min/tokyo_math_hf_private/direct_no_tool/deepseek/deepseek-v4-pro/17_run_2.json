@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We set \\(h(n) = n^2 + 12n - 12 = m^2\\) for some nonnegative integer \\(m\\).  \nCompleting the square:  \n\\((n+6)^2 - 48 = m^2\\)  \n\\(\\Rightarrow (n+6)^2 - m^2 = 48\\)  \n\\(\\Rightarrow (n+6 - m)(n+6 + m) = 48\\).\n\nLet \\(a = n+6 - m\\) and \\(b = n+6 + m\\). Then \\(a \\cdot b = 48\\), both \\(a\\) and \\(b\\) are positive integers of the same parity (since their sum is even). Also \\(b \\ge a\\).  \nThe positive even factor pairs of 48 are \\((2,24), (4,12), (6,8)\\).  \n\nFor each pair, \\(n+6 = \\frac{a+b}{2}\\) and we require \\(n > 0\\):\n- \\((2,24)\\): \\(n+6 = 13 \\Rightarrow n = 7\\).\n- \\((4,12)\\): \\(n+6 = 8 \\Rightarrow n = 2\\).\n- \\((6,8)\\): \\(n+6 = 7 \\Rightarrow n = 1\\).\n\nEach gives \\(m = \\frac{b-a}{2} \\ge 0\\): \\(m = 11, 4, 1\\) respectively.  \nThus there are three positive integers \\(n\\).\n\n\\boxed{3}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 1691,
+    "total_tokens": 1850
+  },
+  "elapsed_time_sec": 28.033037900924683,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T08:25:00.413056+00:00"
+  }
+}

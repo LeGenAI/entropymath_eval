@@ -170,19 +170,18 @@ def load_results(outputs_dir: Path) -> list[dict[str, Any]]:
     files = sorted(glob.glob(str(outputs_dir / "**" / "*_run_*.json"), recursive=True))
     rows = []
     for file_path in files:
-        if file_path.endswith("_error.json"):
-            continue
         try:
             with open(file_path, encoding="utf-8") as f:
                 data = json.load(f)
         except Exception:
             continue
 
+        is_error = file_path.endswith("_error.json")
         meta = data.get("sample_metadata") or {}
         sample_id = data.get("entropymath_id") or data.get("sample_id") or meta.get(
             "entropymath_id"
         ) or data.get("id")
-        correct = is_equiv(data.get("final_answer"), data.get("gold_answer"))
+        correct = False if is_error else is_equiv(data.get("final_answer"), data.get("gold_answer"))
         history = data.get("history") or []
         used_tool = any(item.get("role") == "tool" for item in history)
         tool_text = "\n".join(
@@ -199,7 +198,7 @@ def load_results(outputs_dir: Path) -> list[dict[str, Any]]:
                 "sample_id": str(sample_id),
                 "run_idx": data.get("run_idx", 0),
                 "correct": bool(correct),
-                "final_answer_present": data.get("final_answer") not in (None, ""),
+                "final_answer_present": False if is_error else data.get("final_answer") not in (None, ""),
                 "gold_answer_present": data.get("gold_answer") not in (None, ""),
                 "solver_protocol": data.get("solver_protocol", "tool_assisted"),
                 "difficulty_label": meta.get("difficulty_label"),

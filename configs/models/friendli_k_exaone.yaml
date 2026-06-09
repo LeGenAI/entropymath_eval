@@ -1,0 +1,5 @@
+model: LGAI-EXAONE/K-EXAONE-236B-A23B
+base_url: https://api.friendli.ai/serverless/v1
+api_key: ${FRIENDLI_API_KEY}
+sampling_params_locked: true
+max_turns: 1

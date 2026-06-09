@@ -1,0 +1,36 @@
+{
+  "api_key_env": null,
+  "competition": {
+    "config_path": "configs/competitions/tokyo_math_hf_private.yaml",
+    "data_files": null,
+    "dataset_path": "Co0oC/tokyo_mathEval",
+    "hf_token_env": "HF_TOKEN",
+    "n_rows_loaded": 30,
+    "name": "tokyo_math_hf_private",
+    "start_idx": 0,
+    "subset": "train"
+  },
+  "error_count": 0,
+  "finished_at_utc": "2026-06-07T06:18:22.045756+00:00",
+  "grader_version": "sympy_equivalence_v1",
+  "model": {
+    "api_type": "openai",
+    "max_tokens": null,
+    "max_turns": 1,
+    "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+    "provider": "friendli",
+    "sampling_params_locked": true,
+    "temperature": null,
+    "tool_solver_enabled": false,
+    "top_p": null
+  },
+  "model_config_path": "configs/models/friendli_k_exaone.yaml",
+  "model_id_override": null,
+  "n_repeats": 3,
+  "parser_version": "boxed_extractor_v1",
+  "prompt_template_sha256_16": "1c47900b04fe6414",
+  "reasoning_effort_override": null,
+  "result_count": 90,
+  "solver_protocol": "direct_no_tool",
+  "started_at_utc": "2026-06-07T04:38:45.159832+00:00"
+}

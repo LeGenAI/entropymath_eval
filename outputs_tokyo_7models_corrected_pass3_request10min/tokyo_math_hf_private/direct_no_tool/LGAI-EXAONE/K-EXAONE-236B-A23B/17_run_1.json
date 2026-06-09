@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nTo solve the problem, we are given a function:\n\n$$\nh(n) = n^2 + 12n - 12\n$$\n\nWe are to find **how many positive integers $ n $** make $ h(n) $ a **perfect square**, i.e., there exists some non-negative integer $ k $ such that:\n\n$$\nn^2 + 12n - 12 = k^2\n$$\n\n---\n\n### Step 1: Rewrite the Equation\n\nWe begin by completing the square on the left-hand side:\n\n$$\nn^2 + 12n - 12 = (n + 6)^2 - 36 - 12 = (n + 6)^2 - 48\n$$\n\nSo the equation becomes:\n\n$$\n(n + 6)^2 - k^2 = 48\n$$\n\nThis is a **difference of squares**, so we apply the identity:\n\n$$\na^2 - b^2 = (a - b)(a + b)\n$$\n\nLetting $ a = n + 6 $ and $ b = k $, we get:\n\n$$\n(n + 6 - k)(n + 6 + k) = 48\n$$\n\nLet us define:\n\n- $ d_1 = n + 6 - k $\n- $ d_2 = n + 6 + k $\n\nThen:\n\n$$\nd_1 \\cdot d_2 = 48,\\quad d_2 > d_1 > 0\n$$\n\nAlso, since both $ d_1 $ and $ d_2 $ must be integers and their sum is even (since $ d_1 + d_2 = 2(n + 6) $), they must have the **same parity**. Since $ 48 $ is even, both $ d_1 $ and $ d_2 $ must be **even** (as odd × odd would be odd).\n\n---\n\n### Step 2: Find Valid Factor Pairs\n\nWe now consider all **positive integer factor pairs** of 48 where both factors are **even** and $ d_2 > d_1 $. These are the valid candidates:\n\n| $ d_1 $ | $ d_2 $ | $ d_2 - d_1 $ | Valid? |\n|----------|-----------|------------------|--------|\n| 2        | 24        | 22               | ✅     |\n| 4        | 12        | 8                | ✅     |\n| 6        | 8         | 2                | ✅     |\n\nOther pairs like (1, 48), (3, 16) have one odd and one even factor, which gives an odd difference — not valid for our purposes.\n\n---\n\n### Step 3: Compute $ n $ for Each Valid Pair\n\nRecall that:\n\n$$\nn = \\frac{d_1 + d_2}{2} - 6\n$$\n\nCompute for each valid pair:\n\n1. $ (d_1, d_2) = (2, 24) \\Rightarrow n = \\frac{2 + 24}{2} - 6 = 13 - 6 = 7 $\n2. $ (d_1, d_2) = (4, 12) \\Rightarrow n = \\frac{4 + 12}{2} - 6 = 8 - 6 = 2 $\n3. $ (d_1, d_2) = (6, 8) \\Rightarrow n = \\frac{6 + 8}{2} - 6 = 7 - 6 = 1 $\n\nEach of these values of $ n $ is a **positive integer**, as required for part (a) of the problem.\n\n---\n\n### Step 4: Verify Each Solution\n\nCheck whether $ h(n) $ is a perfect square for these values:\n\n- $ h(1) = 1^2 + 12(1) - 12 = 1 = 1^2 $\n- $ h(2) = 4 + 24 - 12 = 16 = 4^2 $\n- $ h(7) = 49 + 84 - 12 = 121 = 11^2 $\n\nAll three values yield perfect squares.\n\n---\n\n### Step 5: Confirm No Other Solutions Exist\n\nSuppose $ n > 7 $. Then:\n\n$$\nh(n) = (n + 6)^2 - 48\n$$\n\nAs $ n $ increases, $ h(n) $ grows quadratically. The next perfect square after $ (n + 6)^2 $ is $ (n + 7)^2 $, and the gap between them is:\n\n$$\n(n + 7)^2 - (n + 6)^2 = 2n + 13\n$$\n\nSince $ h(n) = (n + 6)^2 - 48 $, the difference between $ h(n) $ and $ (n + 6)^2 $ is 48. For this to be a perfect square, $ h(n) $ must lie between two consecutive squares, but only if 48 is exactly the square of another integer — which it isn't in this form.\n\nTherefore, **no further values** of $ n $ produce perfect squares.\n\nAlso, checking smaller values like $ n = 3 $ through $ n = 6 $ shows that none of them yield perfect squares.\n\n---\n\n### Final Answer\n\nThere are exactly **three** positive integers $ n $ such that $ h(n) $ is a perfect square.\n\n$$\n\\boxed{3}\n$$"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 141,
+    "completion_tokens": 9872,
+    "total_tokens": 10013
+  },
+  "elapsed_time_sec": 69.03800177574158,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T05:47:47.567136+00:00"
+  }
+}

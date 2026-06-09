@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a>0\\), and consider the parabola \\(y=x^2\\). Starting from\n\\(P(a,a^2)\\), let \\(Q\\ne P\\) be the other intersection of the normal line to\nthe parabola at \\(P\\) with the parabola. Let \\(R\\ne Q\\) be the other\nintersection of the normal line at \\(Q\\) with the parabola.\n\nIf the minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M\\), write\n\\(M^2=p/q\\) in lowest terms and find \\(p+q\\).",
+  "final_answer": "33",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "<think>\nParabola y=x². At point P(a,a²), slope of tangent is 2a, normal slope is -1/(2a).\n\nNormal at P: y - a² = -1/(2a)(x - a).\n\nFind other intersection Q with parabola. Let Q have x-coordinate b.\nFor a chord that is normal at P: the normal line intersects parabola at x=a and x=b.\n\nLine through (a,a²) and (b,b²) has slope (b²-a²)/(b-a) = a+b.\nThis must equal normal slope -1/(2a).\nSo a+b = -1/(2a), thus b = -a - 1/(2a).\n\nSimilarly normal at Q gives R with x-coordinate c:\nb + c = -1/(2b), so c = -b - 1/(2b).\n\nWe want minimize x-coordinate of R = c over a>0.\n\nb = -a - 1/(2a). Since a>0, b is negative.\n\nc = -b - 1/(2b).\n\nLet me compute c as function of a. Let b = -(a + 1/(2a)). Note b<0.\n\nc = -b - 1/(2b).\n\nLet me set b negative. Let t = -b = a + 1/(2a) > 0.\n\nThen c = t - 1/(2b) = t - 1/(2(-t)) = t + 1/(2t).\n\nSo c = t + 1/(2t) where t = a + 1/(2a).\n\nWe want minimum of c over a>0. c = t + 1/(2t), with t ranging over values of a+1/(2a) for a>0.\n\na + 1/(2a) has minimum at a = 1/√2: value = 1/√2 + 1/(2/√2)= 1/√2 + (√2)/2 = 1/√2+1/√2 = 2/√2 = √2. So t ≥ √2.\n\nNow c(t) = t + 1/(2t) for t ≥ √2. This is increasing for t > 1/√2 (since derivative 1 - 1/(2t²) >0 when t²>1/2). So minimum at t=√2.\n\nc = √2 + 1/(2√2) = √2 + 1/(2√2) = √2 + √2/4 = (4√2+√2)/4 = 5√2/4.\n\nSo M = 5√2/4. M² = 25·2/16 = 50/16 = 25/8.\n\np/q = 25/8, lowest terms, p+q = 33.\n</think>\n\n\\boxed{33}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 789,
+    "total_tokens": 1124
+  },
+  "elapsed_time_sec": 9.224901676177979,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 10,
+  "sample_id": 10,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "33",
+  "sample_metadata": {
+    "no": 11,
+    "ID": "TOKYO-2025-HUMANITIES-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:09:42.210012+00:00"
+  }
+}

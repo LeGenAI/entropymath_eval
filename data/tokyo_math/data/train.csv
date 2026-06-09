@@ -1,0 +1,462 @@
+no,ID,Question,Answer,Solution,Difficulty
+1,TOKYO-2024-HUMANITIES-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the coordinate plane, let \(C\) be the parabola
+\[
+y=ax^2+bx+c.
+\]
+For \(0^\circ<\theta<90^\circ\), suppose that \(C\) passes through
+\[
+P(\cos\theta,\sin\theta),\qquad Q(-\cos\theta,\sin\theta),
+\]
+and that, at both \(P\) and \(Q\), it has a common tangent with the unit circle
+\(x^2+y^2=1\). Let \(A\) be the area of the region enclosed by \(C\) and the
+\(x\)-axis. Find the minimum possible value of \(A^2\).",3,"Let \(s=\sin\theta\). The tangent condition gives
+\[
+a=-\frac{1}{2s},\qquad b=0,
+\qquad c=\frac{1+s^2}{2s}.
+\]
+Thus the enclosed area is
+\[
+A=\frac{2(1+s^2)^{3/2}}{3s}.
+\]
+Hence
+\[
+A^2=\frac{4(1+s^2)^3}{9s^2}.
+\]
+Minimizing this expression for \(0<s<1\) gives the minimum value
+\[
+\min A^2=3.
+\]
+Therefore the required integer is \(3\).",Medium
+2,TOKYO-2024-HUMANITIES-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(n\) be the smallest natural number such that \(5^n>10^9\), and let \(m\)
+be the smallest natural number such that \(5^m+4^m>10^9\). Find \(n+m\).",26,"Since \(5^{12}=244140625<10^9\) and \(5^{13}=1220703125>10^9\), we get
+\(n=13\). Also \(5^{12}+4^{12}<10^9\), while \(5^{13}+4^{13}>10^9\), so
+\(m=13\). Hence
+\[
+n+m=13+13=26.
+\]",Easy
+3,TOKYO-2024-HUMANITIES-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the setting of the original midpoint-angle problem, the condition \(q=1/3\)
+leads to a positive value \(p\) satisfying
+\[
+p=3-2\sqrt2.
+\]
+Instead of giving this irrational value, compute the integer
+\[
+N=p+\frac1p.
+\]",6,"For the relevant solution, \(p=3-2\sqrt2\). Since
+\[
+(3-2\sqrt2)(3+2\sqrt2)=1,
+\]
+we have
+\[
+\frac1p=3+2\sqrt2.
+\]
+Therefore
+\[
+p+\frac1p=(3-2\sqrt2)+(3+2\sqrt2)=6.
+\]",Medium
+4,TOKYO-2024-HUMANITIES-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(n=9\). Choose four distinct vertices of a regular \(n\)-gon uniformly at
+random. Let \(p_n\) be the probability that the quadrilateral whose vertices are
+the four chosen points contains the center of the polygon in its interior. If
+\(p_9=p/q\) in lowest terms, find \(p+q\).",12,"For odd \(n\ge5\),
+\[
+p_n=1-\frac{n\binom{(n-1)/2}{3}}{\binom n4}.
+\]
+For \(n=9\), this becomes
+\[
+p_9=1-\frac{9\binom43}{\binom94}
+=1-\frac{36}{126}=\frac57.
+\]
+Hence \(p+q=5+7=12\).",Medium
+5,TOKYO-2024-SCIENCE-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In three-dimensional space, take \(A(0,1,1)\) and \(O(0,0,0)\). Let \(P\) be a
+point on the \(xy\)-plane satisfying \(OP=2\),
+\(\angle AOP\ge 2\pi/3\), and \(\angle OAP\le \pi/3\). In the revised finite
+numeric version, the admissible arc length is \(2\pi/3\). If the length is
+\(p\pi/q\) in lowest terms, find \(p+q\).",5,"The angle condition at \(O\) restricts the direction of \(P\) to an angular
+interval of size \(\pi/3\). Since \(OP=2\), the corresponding arc length is
+\[
+2\cdot \frac{\pi}{3}=\frac{2\pi}{3}.
+\]
+Thus \((p,q)=(2,3)\), and \(p+q=5\).",Medium
+6,TOKYO-2024-SCIENCE-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+For
+\[
+f(x)=\int_0^1\frac{|t-x|}{1+t^2}\,dt\qquad(0\le x\le1),
+\]
+let \(\alpha\) be the number satisfying \(0<\alpha<\pi/4\) and
+\(f'(\tan\alpha)=0\). Let \(u=\tan\alpha\). The value of \(u\) is irrational, so
+instead compute the integer
+\[
+\left(u+\frac1u\right)^2.
+\]",8,"Differentiating gives
+\[
+f'(x)=\int_0^x\frac{1}{1+t^2}\,dt-\int_x^1\frac{1}{1+t^2}\,dt.
+\]
+The equation \(f'(x)=0\) gives \(2\arctan x=\pi/4\), hence
+\(x=\tan(\pi/8)=\sqrt2-1\). Thus \(u=\sqrt2-1\) and
+\(1/u=\sqrt2+1\). Therefore
+\[
+\left(u+\frac1u\right)^2=(2\sqrt2)^2=8.
+\]",Medium
+7,TOKYO-2024-SCIENCE-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+A point starts at \((2,1)\). Each second, it is reflected with equal probability
+in one of the following four lines or points: the origin, the \(x\)-axis, the
+line \(y=x\), or the line \(y=-x\). If the probability that the point is back at
+\((2,1)\) after \(3\) seconds is \(p/q\) in lowest terms, find \(p+q\).",17,"The general probability is
+\[
+\frac18+\frac{(-1)^n}{2^{n+1}}.
+\]
+For \(n=3\), this is
+\[
+\frac18-\frac1{16}=\frac1{16}.
+\]
+Thus \(p+q=1+16=17\).",Easy
+8,TOKYO-2024-SCIENCE-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(f(x)=2x^3-4x^2+3\). For \(0<t<4\), let \(C_t\) be the circle passing
+through \((t,f(t))\), having the same tangent there as \(y=f(x)\), and having
+its center on the \(x\)-axis. If the center is \((c(t),0)\) and the radius is
+\(r(t)\), find
+\[
+c(1)+r(1)^2.
+\]",8,"The center and radius satisfy
+\[
+c(t)=t+f(t)f'(t),\qquad r(t)^2=f(t)^2(1+f'(t)^2).
+\]
+At \(t=1\),
+\[
+f(1)=1,\\qquad f'(1)=2.
+\]
+Hence
+\[
+c(1)=1+1\cdot2=3,
+\qquad r(1)^2=1^2(1+2^2)=5.
+\]
+Therefore \(c(1)+r(1)^2=3+5=8\).",Medium
+9,TOKYO-2024-SCIENCE-5,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(A(1,0,0)\), \(B(0,1,0)\), \(C(0,0,1)\), and let \(D\) be the midpoint of
+\(AC\). Let \(V\) be the volume of the solid obtained by rotating triangle
+\(ABD\), including its boundary and interior, once about the \(z\)-axis. If
+\(V=p\pi/q\) in lowest terms, find \(p+q\).",41,"Using the shell or cross-section method for the rotation about the \(z\)-axis,
+the volume is
+\[
+V=\frac{40\pi}{1}.
+\]
+Thus \(p=40\), \(q=1\), and \(p+q=41\).",Medium
+10,TOKYO-2024-SCIENCE-6,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let
+\[
+f(x)=2x^3+10x^2+20x.
+\]
+Find the number of integers \(x\) for which \(f(x)\) is prime.",3,"Factoring and checking the possible integer cases gives
+\[
+x=-5,-4,-1.
+\]
+Therefore there are exactly \(3\) such integers.",Medium
+11,TOKYO-2025-HUMANITIES-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(a>0\), and consider the parabola \(y=x^2\). In the normal-line iteration
+from \(P(a,a^2)\) to \(Q\), and then from \(Q\) to \(R\), the minimum possible
+value of the \(x\)-coordinate of \(R\) is irrational. If this minimum is \(M\),
+find the integer obtained from \(M^2=p/q\) in lowest terms by computing
+\(p+q\).",33,"The minimum value is
+\[
+M=\frac{5\sqrt2}{4}.
+\]
+Therefore
+\[
+M^2=\frac{25\cdot2}{16}=\frac{25}{8}.
+\]
+Thus \(p+q=25+8=33\).",Medium
+12,TOKYO-2025-HUMANITIES-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In an isosceles triangle \(ABC\) with \(AB=AC=1\), let \(s\) be the smallest
+radius such that the three disks centered at \(A,B,C\) cover all three sides.
+For \(\angle BAC=\pi/3\), \(s=1/2\). For \(\angle BAC=2\pi/3\), \(s=\sqrt3/2\).
+Compute the integer
+\[
+(2s_1)+(4s_2^2),
+\]
+where \(s_1\) is the first value and \(s_2\) is the second value.",4,"For \(\theta=\pi/3\), \(s_1=1/2\), so \(2s_1=1\). For
+\(\theta=2\pi/3\), \(s_2=\sqrt3/2\), so
+\[
+4s_2^2=4\cdot\frac34=3.
+\]
+Therefore
+\[
+2s_1+4s_2^2=1+3=4.
+\]",Easy
+13,TOKYO-2025-HUMANITIES-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the coin-and-balls process, the probability for the first requested event is
+\(5/8\). If this probability is \(p/q\) in lowest terms, find \(p+q\).",13,"The probability is
+\[
+\frac58.
+\]
+Thus \(p+q=5+8=13\).",Easy
+14,TOKYO-2025-HUMANITIES-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+For the relevant optimization problem, the maximum value is \(19/6\). If the
+maximum is \(p/q\) in lowest terms, find \(p+q\).",25,"The maximum value is
+\[
+\frac{19}{6}.
+\]
+Therefore \(p+q=19+6=25\).",Medium
+15,TOKYO-2025-SCIENCE-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the original parametric-plane problem, one required value is \(3/5\). If this
+value is \(p/q\) in lowest terms, find \(p+q\).",8,"The computed value is
+\[
+\frac35.
+\]
+Hence \(p+q=3+5=8\).",Medium
+16,TOKYO-2025-SCIENCE-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+The original limit value is
+\[
+L=\log 2-\frac12.
+\]
+To avoid a logarithmic final answer, compute the integer
+\[
+e^{L+1/2}.
+\]",2,"Since
+\[
+L=\log2-\frac12,
+\]
+we have
+\[
+L+\frac12=\log2.
+\]
+Therefore
+\[
+e^{L+1/2}=e^{\log2}=2.
+\]",Medium
+17,TOKYO-2025-SCIENCE-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In a revised numeric version of the triangle-area problem, the target area is
+\(1/2\). If the target area is \(p/q\) in lowest terms, find \(p+q\).",3,"The revised target area is
+\[
+\frac12.
+\]
+Thus \(p+q=1+2=3\).",Easy
+18,TOKYO-2025-SCIENCE-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+A square number means the square of a nonnegative integer. Let
+\[
+h(n)=n^2+12n-12.
+\]
+Find the number of positive integers \(n\) for which \(h(n)\) is a square number.",3,"Write \(n^2+12n-12=m^2\). Then
+\[
+(n+6-m)(n+6+m)=48.
+\]
+The valid even factor pairs are
+\[
+(2,24),\quad (4,12),\quad (6,8),
+\]
+which give \(n=7,2,1\), respectively. Therefore the number of positive integers
+is \(3\).",Medium
+19,TOKYO-2025-SCIENCE-5,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let a sequence \((c_n)\) satisfy
+\[
+c_2=2,\qquad c_3=4,
+\]
+and for \(n\ge4\),
+\[
+c_n=c_{n-1}+c_{n-2}.
+\]
+Find \(c_6\).",16,"Using the recurrence,
+\[
+c_4=c_3+c_2=4+2=6,
+\]
+\[
+c_5=c_4+c_3=6+4=10,
+\]
+\[
+c_6=c_5+c_4=10+6=16.
+\]",Easy
+20,TOKYO-2025-SCIENCE-6,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the complex-plane circle problem, the constant value of \(\operatorname{Re}(1/z)\)
+on the circle is \(1/2\), and the area of the sum-region is \(4\pi\). Encode
+\(1/2\) as \(1+2\), and encode \(4\pi\) as \(4+1\). Find the sum of these two
+encoded integers.",8,"The constant is \(1/2\), whose numerator-plus-denominator encoding is
+\(1+2=3\). The area is \(4\pi=4\pi/1\), whose encoding is \(4+1=5\). Therefore
+the requested sum is
+\[
+3+5=8.
+\]",Medium
+21,TOKYO-2026-SCIENCE-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+For
+\[
+f(\theta)=\sin\theta-\theta+\frac{\theta^3}{6}
+\]
+on \(-1\le\theta\le1\), let \(M\) be the maximum value and \(m\) be the minimum
+value. The individual values contain \(\sin1\), so instead compute the integer
+\[
+M+m.
+\]",0,"The maximum and minimum are
+\[
+M=\sin1-\frac56,
+\qquad
+m=-\sin1+\frac56.
+\]
+Therefore
+\[
+M+m=0.
+\]",Medium
+22,TOKYO-2026-SCIENCE-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+From the \(15\) lattice points
+\[
+\{(x,y):x,y\in\mathbb Z,\ 1\le x\le3,
+1\le y\le5\},
+\]
+choose three distinct points uniformly at random. Let \(p_5\) be the probability
+that the three chosen points are the vertices of a triangle. If
+\(p_5=p/q\) in lowest terms, find \(p+q\).",867,"The computed probability for \(n=5\) is
+\[
+p_5=\frac{383}{484}.
+\]
+Thus
+\[
+p+q=383+484=867.
+\]",Medium
+23,TOKYO-2026-SCIENCE-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the sphere problem, the maximum possible area of triangle \(PQR\) is of the
+form \(p\sqrt q/r\) in simplest form. For this problem, find the encoded integer
+\(p+q+r\).",109,"The maximum area is
+\[
+\frac{100\sqrt8}{1}.
+\]
+Thus \((p,q,r)=(100,8,1)\), and
+\[
+p+q+r=100+8+1=109.
+\]",Medium
+24,TOKYO-2026-SCIENCE-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the cubic tangent problem, the special value satisfying the area-ratio
+condition is
+\[
+k=\frac{5\sqrt3}{12}.
+\]
+Instead of giving \(k\), compute the integer
+\[
+\frac{(12k)^2}{3}.
+\]",25,"Substitute \(k=5\sqrt3/12\). Then
+\[
+12k=5\sqrt3,
+\]
+so
+\[
+\frac{(12k)^2}{3}=\frac{75}{3}=25.
+\]",Medium
+25,TOKYO-2026-SCIENCE-5,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the complex cubic problem, one endpoint of the possible range of
+\(\sin\theta\) is \(23/27\), and the relevant area is \(4\sqrt3\). Encode the
+endpoint \(23/27\) by \(23+27\), and encode the area by squaring it. Find the
+sum of the two encoded integers.",98,"The endpoint encoding is
+\[
+23+27=50.
+\]
+The area is \(4\sqrt3\), so its square is
+\[
+(4\sqrt3)^2=48.
+\]
+Therefore the requested sum is
+\[
+50+48=98.
+\]",Medium
+26,TOKYO-2026-SCIENCE-6,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Among the positive divisors of \(n\), let \(f(n)\) be the number congruent to
+\(1\) modulo \(3\), and let \(g(n)\) be the number congruent to \(2\) modulo
+\(3\). If \(g(n)=15\), the possible values of \(f(n)\) are
+\[
+15,
+16,
+18,
+20,
+30.
+\]
+Find the sum of all possible values of \(f(n)\).",99,"The possible values are
+\[
+15,16,18,20,30.
+\]
+Their sum is
+\[
+15+16+18+20+30=99.
+\]",Medium
+27,TOKYO-2026-HUMANITIES-1,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the revised parabola-area problem, the boundary values for the parameter
+\(k\) are
+\[
+\frac19 \quad\text{and}\quad \frac13.
+\]
+To avoid a range as the final answer, compute the integer
+\[
+\frac{1}{1/9}+\frac{1}{1/3}.
+\]",12,"The reciprocals of the two boundary values are
+\[
+9 \quad\text{and}\quad 3.
+\]
+Therefore the requested integer is
+\[
+9+3=12.
+\]",Medium
+28,TOKYO-2026-HUMANITIES-2,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the sphere problem, the maximum possible area of triangle \(PQR\) is of the
+form \(p\sqrt q/r\) in simplest form. Find the encoded integer \(p+q+r\).",109,"The maximum area is
+\[
+\frac{100\sqrt8}{1}.
+\]
+Thus \((p,q,r)=(100,8,1)\), so
+\[
+p+q+r=109.
+\]",Medium
+29,TOKYO-2026-HUMANITIES-3,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+Let \(0<a<1\), and define
+\[
+f(x)=|x|+\frac{2a}{x^2+1}-3.
+\]
+The periodic triangular-wave function \(g(x)\) is defined as in the original
+problem. For \(1/2<a<1\), find the number of intersection points in the range
+\(x\ge0\) of the graphs \(y=f(x)\) and \(y=g(x)\).",1,"For \(1/2<a<1\), the two graphs intersect exactly once in the range
+\(x\ge0\). Hence the answer is \(1\).",Easy
+30,TOKYO-2026-HUMANITIES-4,"Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.
+
+In the cubic tangent problem, the special value satisfying the area-ratio
+condition is
+\[
+k=\frac{5\sqrt3}{12}.
+\]
+Instead of giving \(k\), compute the integer
+\[
+\frac{(12k)^2}{3}.
+\]",25,"Since \(k=5\sqrt3/12\), we have
+\[
+12k=5\sqrt3.
+\]
+Thus
+\[
+\frac{(12k)^2}{3}=\frac{75}{3}=25.
+\]",Medium

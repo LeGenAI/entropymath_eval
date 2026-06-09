@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a=3/5\\), and define\n\\[\nf(x)=\\frac{a}{8}(x-1)^2+\\frac{2}{a}-3.\n\\]\nFor every integer \\(n\\), define the periodic triangular-wave function \\(g\\) by\n\\[\ng(x)=\n\\begin{cases}\nx-2n,&2n\\le x<2n+1,\\\\\n-x+2n+2,&2n+1\\le x<2n+2.\n\\end{cases}\n\\]\nFind the number of intersection points of \\(y=f(x)\\) and \\(y=g(x)\\) in the\nrange \\(x\\ge0\\).",
+  "final_answer": "4",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nThe number of intersection points of \\(y = f(x)\\) and \\(y = g(x)\\) for \\(x \\ge 0\\) is \\(\\boxed{4}\\)."
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 14022,
+    "total_tokens": 14242
+  },
+  "elapsed_time_sec": 106.83844423294067,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 28,
+  "sample_id": 28,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "4",
+  "sample_metadata": {
+    "no": 29,
+    "ID": "TOKYO-2026-HUMANITIES-3",
+    "Difficulty": "Easy"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:15:38.317629+00:00"
+  }
+}

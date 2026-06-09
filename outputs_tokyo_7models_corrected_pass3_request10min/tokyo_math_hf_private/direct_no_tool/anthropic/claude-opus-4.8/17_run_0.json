@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We need n²+12n-12 = k².\n\nn²+12n-12 = (n+6)²-48 = k².\n\nSo (n+6)²-k²=48.\n(n+6-k)(n+6+k)=48.\n\nLet a=n+6-k, b=n+6+k, ab=48, a+b=2(n+6), same parity.\n\nBoth even: a·b=48 with both even. Factor pairs (positive, a≤b):\n(2,24): sum26, n+6=13, n=7, k=11. Check: 49+84-12=121=11². Yes.\n(4,12): sum16, n+6=8, n=2, k=4. Check:4+24-12=16=4². Yes.\n(6,8): sum14, n+6=7, n=1, k=1. Check:1+12-12=1. Yes.\n\nAlso negative factors but n positive so n+6 positive, a+b positive. k≥0.\n\nConsider k could make a negative if k>n+6. Then a negative, b positive, product negative ≠48. So both positive.\n\nBoth odd: 48 not product of two odds (48 even). No.\n\nSo three values: n=1,2,7.\n\n\\boxed{3}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 372,
+    "total_tokens": 599
+  },
+  "elapsed_time_sec": 5.15487003326416,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:10:46.097751+00:00"
+  }
+}

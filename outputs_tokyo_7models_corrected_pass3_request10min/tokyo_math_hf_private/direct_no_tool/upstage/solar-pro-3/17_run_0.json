@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We need to find number of positive integers n such that h(n)=n^2+12n-12 is a perfect square (square of a nonnegative integer). Let h(n)=k^2, where k is integer >=0. So n^2+12n-12 = k^2.\n\nRewrite: n^2+12n-12 - k^2 =0 => (n^2+12n+36) - k^2 = 48 => (n+6)^2 - k^2 = 48.\n\nThus (n+6 - k)(n+6 + k) = 48.\n\nLet a = n+6 - k, b = n+6 + k, with a,b integers, same parity (since sum 2(n+6) even). Also a*b =48, and b >= a (since k>=0). Also n = (a+b)/2 -6, must be positive integer.\n\nWe need a,b integers, same parity, product 48, and resulting n positive integer.\n\nList factor pairs of 48 (positive and negative?). Since n positive, n+6 >0, and k nonnegative, a = n+6 - k could be positive or zero? If k > n+6 then a negative, but then b = n+6 + k positive, product negative, can't be 48 positive. So a must be positive. So a>0, b>0.\n\nThus a,b positive divisors of 48 with same parity.\n\nDivisors of 48: 1,2,3,4,6,8,12,16,24,48.\n\nNow consider pairs (a,b) with a*b=48, a<=b.\n\nCheck parity:\n\n(1,48): 1 odd,48 even -> different parity -> not allowed.\n\n(2,24): both even -> ok.\n\n(3,16): odd/even -> no.\n\n(4,12): both even -> ok.\n\n(6,8): both even -> ok.\n\n(8,6) same as (6,8) but a<=b we already have.\n\n(12,4) etc.\n\nAlso (16,3) no.\n\n(24,2) ok but a<=b already.\n\n(48,1) no.\n\nAlso (a,b) could be ( -? ) but a positive.\n\nNow compute n for each:\n\nn = (a+b)/2 -6.\n\nCase (2,24): a+b=26, /2=13, n=13-6=7. Positive integer. k = (b-a)/2 = (24-2)/2=11. Check h(7)=49+84-12=121=11^2 good.\n\nCase (4,12): a+b=16, /2=8, n=8-6=2. k=(12-4)/2=4. h(2)=4+24-12=16=4^2 good.\n\nCase (6,8): a+b=14, /2=7, n=7-6=1. k=(8-6)/2=1. h(1)=1+12-12=1=1^2 good.\n\nAlso consider (a,b) = ( -? ) maybe a negative, b negative? product positive 48, both negative. Then a+b negative, n = (a+b)/2 -6 negative, not positive. So ignore.\n\nThus we have three positive integer n: 1,2,7.\n\nCheck if any other factor pairs with a,b same parity but a could be larger than b? Since we defined a = n+6 - k, b = n+6 + k, a <= b automatically because k>=0. So we only need a<=b.\n\nThus answer is 3.\n\nBut ensure n positive integer, not zero? Positive integers means >0. n=1,2,7 are positive.\n\nThus number of positive integers n is 3.\n\nPut final answer in \\boxed{3}."
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 911,
+    "total_tokens": 1133
+  },
+  "elapsed_time_sec": 6.983304023742676,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "upstage/solar-pro-3",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:36:19.900007+00:00"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "5",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "To determine the number of positive integers \\( n \\) for which \\( h(n) = n^2 + 12n - 12 \\) is a perfect square, we start by setting \\( h(n) = k^2 \\) for some integer \\( k \\). This gives the equation:\n\n\\[\nn^2 + 12n - 12 = k^2.\n\\]\n\nRearranging terms, we get:\n\n\\[\nn^2 + 12n - (k^2 + 12) = 0.\n\\]\n\nThis is a quadratic equation in \\( n \\). For \\( n \\) to be an integer, the discriminant must be a perfect square. The discriminant \\( D \\) is:\n\n\\[\nD = 12^2 - 4 \\cdot 1 \\cdot (-(k^2 + 12)) = 144 + 4(k^2 + 12) = 4k^2 + 192.\n\\]\n\nFor \\( D \\) to be a perfect square, let \\( D = m^2 \\) for some integer \\( m \\). Then:\n\n\\[\n4k^2 + 192 = m^2 \\implies m^2 - 4k^2 = 192.\n\\]\n\nThis is a difference of squares, which factors as:\n\n\\[\n(m - 2k)(m + 2k) = 192.\n\\]\n\nWe need to find pairs of factors of 192 such that both factors are even (since \\( m - 2k \\) and \\( m + 2k \\) must be even). The factor pairs of 192 are:\n\n\\[\n(1, 192), (2, 96), (3, 64), (4, 48), (6, 32), (8, 24), (12, 16).\n\\]\n\nWe check each pair to see if both factors are even and if they satisfy the conditions for \\( m \\) and \\( k \\):\n\n1. \\( (2, 96) \\): Both factors are even. Solving gives \\( m = 49 \\) and \\( k = 23 \\).\n2. \\( (4, 48) \\): Both factors are even. Solving gives \\( m = 26 \\) and \\( k = 12 \\).\n3. \\( (6, 32) \\): Both factors are even. Solving gives \\( m = 19 \\) and \\( k = 7 \\).\n4. \\( (8, 24) \\): Both factors are even. Solving gives \\( m = 14 \\) and \\( k = 5 \\).\n5. \\( (12, 16) \\): Both factors are even. Solving gives \\( m = 10 \\) and \\( k = 3 \\).\n\nEach pair gives a valid \\( k \\), and substituting back into the quadratic equation for \\( n \\) yields integer solutions. For each \\( k \\), we find:\n\n- \\( k = 23 \\) gives \\( n = 24 \\).\n- \\( k = 12 \\) gives \\( n = 12 \\).\n- \\( k = 7 \\) gives \\( n = 6 \\).\n- \\( k = 5 \\) gives \\( n = 4 \\).\n- \\( k = 3 \\) gives \\( n = 3 \\).\n\nThese are all distinct positive integers. Therefore, the number of positive integers \\( n \\) for which \\( h(n) \\) is a square number is:\n\n\\[\n\\boxed{5}\n\\]"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 660,
+    "completion_tokens": 743,
+    "total_tokens": 1403
+  },
+  "elapsed_time_sec": 1.755600929260254,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deprk58vp9q3z6g",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T04:37:54.895673+00:00"
+  }
+}

@@ -3,10 +3,14 @@ import yaml
 import json
 import os
 import hashlib
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from tqdm import tqdm
 from datasets import load_dataset
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
 from math_eval_v7.solvers.direct_solver import DirectSolver
 from math_eval_v7.solvers.tool_solver import ToolSolver
 
@@ -56,6 +60,19 @@ def infer_provider(model_config):
     if "localhost" in base_url or "127.0.0.1" in base_url:
         return "local"
     return api_type or "openai_compatible"
+
+def default_api_key_for_provider(model_config):
+    if model_config.get("api_key"):
+        return model_config.get("api_key")
+    provider = infer_provider(model_config)
+    env_by_provider = {
+        "openrouter": "OPENROUTER_API_KEY",
+        "friendli": "FRIENDLI_API_KEY",
+        "upstage": "UPSTAGE_API_KEY",
+        "clova": "CLOVA_STUDIO_API_KEY",
+    }
+    env_name = env_by_provider.get(provider)
+    return os.environ.get(env_name) if env_name else None
 
 def sanitized_model_summary(model_config):
     return {
@@ -113,6 +130,42 @@ def get_sample_metadata(item):
     }
     return {key: value for key, value in item.items() if key not in excluded}
 
+def build_dataset_load_kwargs(comp_config):
+    kwargs = {}
+    hf_token_env = comp_config.get("hf_token_env")
+    if hf_token_env:
+        hf_token = os.environ.get(hf_token_env)
+        if not hf_token:
+            raise RuntimeError(f"Environment variable is not set for private HF dataset: {hf_token_env}")
+        kwargs["token"] = hf_token
+    if "trust_remote_code" in comp_config:
+        kwargs["trust_remote_code"] = comp_config["trust_remote_code"]
+    return kwargs
+
+def load_hf_dataset(comp_config, split):
+    data_files = comp_config.get("data_files")
+    load_kwargs = build_dataset_load_kwargs(comp_config)
+    try:
+        return load_dataset(
+            comp_config["dataset_path"],
+            comp_config.get("dataset_name"),
+            data_files=data_files,
+            split=split,
+            **load_kwargs,
+        )
+    except TypeError as exc:
+        if "token" not in load_kwargs:
+            raise
+        legacy_kwargs = dict(load_kwargs)
+        legacy_kwargs["use_auth_token"] = legacy_kwargs.pop("token")
+        return load_dataset(
+            comp_config["dataset_path"],
+            comp_config.get("dataset_name"),
+            data_files=data_files,
+            split=split,
+            **legacy_kwargs,
+        )
+
 def write_manifest(output_dir, manifest):
     with open(os.path.join(output_dir, "run_manifest.json"), "w") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False, sort_keys=True)
@@ -132,6 +185,7 @@ def main():
     parser.add_argument("--max-tokens-override", type=int, default=None, help="Override max_tokens for the model request")
     parser.add_argument("--reasoning-effort-override", type=str, default=None, help="Override reasoning effort; use 'none' to remove inherited effort")
     parser.add_argument("--max-problems", type=int, default=None, help="Optional dry-run limit after competition slicing")
+    parser.add_argument("--resume", action="store_true", help="Skip runs that already have a result or error file.")
     args = parser.parse_args()
 
     # Load configs
@@ -142,8 +196,13 @@ def main():
     
     comp_config = load_config(comp_config_path)
     model_config = load_config(model_config_path)
-    if "api_key" in model_config:
-        model_config["api_key"] = resolve_env_placeholder(model_config["api_key"], "api_key")
+    for field_name in ("model", "base_url", "api_key"):
+        if field_name in model_config:
+            model_config[field_name] = resolve_env_placeholder(model_config[field_name], field_name)
+    if "api_key" not in model_config:
+        default_api_key = default_api_key_for_provider(model_config)
+        if default_api_key:
+            model_config["api_key"] = default_api_key
     if args.model_id_override:
         model_config["model"] = args.model_id_override
     if args.api_key_env:
@@ -169,22 +228,11 @@ def main():
 
     # Load dataset
     print(f"Loading dataset: {comp_config['dataset_path']}...")
-    data_files = comp_config.get('data_files')
     try:
-        dataset = load_dataset(
-            comp_config['dataset_path'],
-            comp_config.get('dataset_name'),
-            data_files=data_files,
-            split=comp_config.get('subset', 'test')
-        )
+        dataset = load_hf_dataset(comp_config, comp_config.get('subset', 'test'))
     except ValueError:
         print("Split 'test' not found, trying 'train'...")
-        dataset = load_dataset(
-            comp_config['dataset_path'],
-            comp_config.get('dataset_name'),
-            data_files=data_files,
-            split='train'
-        )
+        dataset = load_hf_dataset(comp_config, 'train')
     
     # Limit problems if specified (support optional start_idx)
     start_idx = comp_config.get('start_idx', 0)
@@ -214,6 +262,7 @@ def main():
             "config_path": str(comp_config_path),
             "dataset_path": comp_config.get("dataset_path"),
             "data_files": comp_config.get("data_files"),
+            "hf_token_env": comp_config.get("hf_token_env"),
             "subset": comp_config.get("subset", "test"),
             "start_idx": start_idx,
             "n_rows_loaded": len(dataset),
@@ -246,6 +295,11 @@ def main():
         print(f"Solving problem {i}...")
         
         for run_idx in range(args.n_repeats):
+            result_path = os.path.join(output_dir, f"{global_idx}_run_{run_idx}.json")
+            error_path = os.path.join(output_dir, f"{global_idx}_run_{run_idx}_error.json")
+            if args.resume and (os.path.exists(result_path) or os.path.exists(error_path)):
+                print(f"Skipping existing problem {global_idx}, run {run_idx}.")
+                continue
             try:
                 result = solver.solve(problem_text)
                 result['id'] = global_idx
@@ -264,8 +318,10 @@ def main():
                 }
                 
                 # Save individual result
-                with open(os.path.join(output_dir, f"{global_idx}_run_{run_idx}.json"), 'w') as f:
+                with open(result_path, 'w') as f:
                     json.dump(result, f, indent=2, ensure_ascii=False)
+                if os.path.exists(error_path):
+                    os.unlink(error_path)
                 
                 results.append(result)
             except Exception as e:
@@ -285,7 +341,7 @@ def main():
                     "solver_protocol": solver_name,
                     "sample_metadata": get_sample_metadata(item),
                 }
-                with open(os.path.join(output_dir, f"{global_idx}_run_{run_idx}_error.json"), 'w') as f:
+                with open(error_path, 'w') as f:
                     json.dump(error_result, f, indent=2, ensure_ascii=False)
                 continue
 
@@ -308,6 +364,8 @@ def main():
     manifest["error_count"] = error_count
     write_manifest(output_dir, manifest)
     print(f"Results saved to {output_dir}")
+    if not results and len(dataset) > 0:
+        sys.exit(2)
 
 if __name__ == "__main__":
     main()

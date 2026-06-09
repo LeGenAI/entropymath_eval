@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nFor the relevant optimization problem, the maximum value is \\(19/6\\). If the\nmaximum is \\(p/q\\) in lowest terms, find \\(p+q\\).",
+  "final_answer": "25",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\n\\boxed{25}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 129,
+    "completion_tokens": 515,
+    "total_tokens": 644
+  },
+  "elapsed_time_sec": 3.991780996322632,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 13,
+  "sample_id": 13,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "25",
+  "sample_metadata": {
+    "no": 14,
+    "ID": "TOKYO-2025-HUMANITIES-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T05:40:12.061940+00:00"
+  }
+}

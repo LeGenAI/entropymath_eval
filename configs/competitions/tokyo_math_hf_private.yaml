@@ -1,0 +1,12 @@
+name: tokyo_math_hf_private
+dataset_path: Co0oC/tokyo_mathEval
+subset: train
+hf_token_env: HF_TOKEN
+n_problems: 999
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "Private Hugging Face Tokyo University Mathematics Problems 2024-2026 Revised Integer QA"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap
