@@ -46,6 +46,9 @@ hcx-vllm-plugin/
 outputs/*/*/
 outputs_nrepeats3/*/*/
 
+# Local website integration data; regenerate from the separate experiment package.
+outputs/website_update/
+
 # Keep compact summaries and reports.
 !outputs/*_summary.json
 !outputs/*_expanded_summary.json
