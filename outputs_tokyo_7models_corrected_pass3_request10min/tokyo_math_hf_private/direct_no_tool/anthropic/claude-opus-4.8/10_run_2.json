@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a>0\\), and consider the parabola \\(y=x^2\\). Starting from\n\\(P(a,a^2)\\), let \\(Q\\ne P\\) be the other intersection of the normal line to\nthe parabola at \\(P\\) with the parabola. Let \\(R\\ne Q\\) be the other\nintersection of the normal line at \\(Q\\) with the parabola.\n\nIf the minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M\\), write\n\\(M^2=p/q\\) in lowest terms and find \\(p+q\\).",
+  "final_answer": "33",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "<think>\nParabola y=x². At P(a,a²), slope of tangent is 2a, normal slope is -1/(2a).\n\nNormal line at P: y - a² = -1/(2a)(x - a).\n\nIntersect with y=x²:\nx² - a² = -1/(2a)(x-a)\n(x-a)(x+a) = -1/(2a)(x-a)\nFor x≠a: x+a = -1/(2a)\nx = -a - 1/(2a).\n\nSo Q has x-coordinate q1 = -a - 1/(2a).\n\nThen R is other intersection of normal at Q. Using same formula: from point with x-coord b, the other intersection x-coord is -b - 1/(2b).\n\nSo R x-coord = -q1 - 1/(2 q1).\n\nLet me denote b = q1 = -a - 1/(2a).\n\nR_x = -b - 1/(2b).\n\nWe want minimum of R_x over a>0.\n\nLet me compute. Let b = -(a + 1/(2a)). Note a>0, so a+1/(2a) ≥ 2·sqrt(a·1/(2a))=2·sqrt(1/2)=√2. So a+1/(2a) ≥ √2, with equality at a=1/√2.\n\nSo b ≤ -√2 (b is negative).\n\nR_x = -b - 1/(2b).\n\nLet t = a + 1/(2a) ≥ √2, so b = -t.\nR_x = t - 1/(2(-t))·... wait compute: -b = t. -1/(2b) = -1/(2(-t)) = 1/(2t).\nSo R_x = t + 1/(2t).\n\nWait: R_x = -b - 1/(2b) = -(-t) - 1/(2(-t)) = t + 1/(2t).\n\nSo R_x = t + 1/(2t) where t ≥ √2.\n\nHmm, this is increasing for t > 1/√2. Since t≥√2, R_x increasing, minimum at t=√2.\n\nR_x min = √2 + 1/(2√2) = √2 + 1/(2√2) = √2 + √2/4 = (5√2)/4.\n\nSo M = 5√2/4. M² = 25·2/16 = 50/16 = 25/8.\n\np/q = 25/8, p+q = 33.\n</think>\n\n\\boxed{33}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 760,
+    "total_tokens": 1095
+  },
+  "elapsed_time_sec": 8.020203113555908,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 10,
+  "sample_id": 10,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "33",
+  "sample_metadata": {
+    "no": 11,
+    "ID": "TOKYO-2025-HUMANITIES-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:09:59.907570+00:00"
+  }
+}

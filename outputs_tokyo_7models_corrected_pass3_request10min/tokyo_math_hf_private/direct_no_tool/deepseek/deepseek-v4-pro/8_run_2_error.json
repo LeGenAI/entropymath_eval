@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "sample_id": 8,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(A(1,0,0)\\), \\(B(0,1,0)\\), \\(C(0,0,1)\\), and let \\(D\\) be the midpoint of\n\\(AC\\). Let \\(V\\) be the volume of the solid obtained by rotating triangle\n\\(ABD\\), including its boundary and interior, once about the \\(z\\)-axis. If\n\\(V=p\\pi/q\\) in lowest terms, find \\(p+q\\).",
+  "error": "Empty model response; check provider authentication, model id, or request parameters.",
+  "solved": false,
+  "final_answer": null,
+  "gold_answer": "41",
+  "solver_protocol": "direct_no_tool",
+  "sample_metadata": {
+    "no": 9,
+    "ID": "TOKYO-2024-SCIENCE-5",
+    "Difficulty": "Medium"
+  }
+}

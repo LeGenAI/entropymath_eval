@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "sample_id": 4,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn three-dimensional space, take \\(A(0,1,1)\\) and \\(O(0,0,0)\\). Let \\(P\\) be a point on the \\(xy\\)-plane satisfying\n\\[\nOP=2,\\qquad \\angle AOP\\ge \\frac{2\\pi}{3},\\qquad \\angle OAP\\le \\frac{\\pi}{3}.\n\\]\nLet \\(L\\) be the total arc length of the set of all possible points \\(P\\). If\n\\(L=p\\pi/q\\) in lowest terms, find \\(p+q\\).",
+  "error": "Empty model response; check provider authentication, model id, or request parameters.",
+  "solved": false,
+  "final_answer": null,
+  "gold_answer": "2",
+  "solver_protocol": "direct_no_tool",
+  "sample_metadata": {
+    "no": 5,
+    "ID": "TOKYO-2024-SCIENCE-1",
+    "Difficulty": "Medium"
+  }
+}

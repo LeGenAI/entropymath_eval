@@ -2,7 +2,7 @@ import os
 import requests
 import json
 import uuid
-from openai import OpenAI
+from openai import APITimeoutError, OpenAI, RateLimitError
 from typing import List, Dict, Any
 
 class ClovaStudioClient:
@@ -50,6 +50,9 @@ class ClovaStudioClient:
             status_code = response.status_code
             try:
                 response.raise_for_status()
+            except APITimeoutError as e:
+                print(f"API request timed out; skipping this run: {e}")
+                return "", None
             except Exception as e:
                 # Log status and a snippet of the body for debugging
                 try:
@@ -141,14 +144,15 @@ class APIClient:
             self.client = OpenAI(
                 base_url=base_url or os.getenv("OPENAI_BASE_URL", "http://localhost:1234/v1"),
                 api_key=api_key or os.getenv("OPENAI_API_KEY", "not-needed"),
-                default_headers=default_headers or {}
+                default_headers=default_headers or {},
+                max_retries=0,
             )
 
     def chat_completion(self, messages: List[Dict[str, str]], **kwargs) -> tuple:
         if self.api_type == "clova":
             return self.client.chat_completion(messages, **kwargs)
             
-        max_retries = 3
+        max_retries = 10
         # Prevent indefinite blocking if the local server stops responding.
         kwargs.setdefault("timeout", 600)
         debug_api = os.getenv("MATH_EVAL_DEBUG_API") == "1"
@@ -175,11 +179,19 @@ class APIClient:
                     print(f"DEBUG: Received content: {content!r}")
                 
                 if not content:
-                    print(f"Warning: Empty content received on attempt {attempt + 1}")
-                    if attempt < max_retries - 1:
-                        continue
+                    print("Warning: Empty content received; skipping this run.")
                         
                 return content, usage
+            except APITimeoutError as e:
+                print(f"API request timed out; skipping this run: {e}")
+                return "", None
+            except RateLimitError:
+                print(f"API rate limit reached (attempt {attempt + 1}/{max_retries}); waiting 60 seconds.")
+                if attempt < max_retries - 1:
+                    import time
+                    time.sleep(60)
+                else:
+                    return "", None
             except Exception as e:
                 print(f"API Error (Attempt {attempt + 1}/{max_retries}): {e}")
                 if attempt < max_retries - 1:

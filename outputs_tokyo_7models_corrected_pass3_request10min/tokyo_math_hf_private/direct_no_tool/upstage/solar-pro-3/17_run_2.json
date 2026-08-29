@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We need to find number of positive integers n such that h(n) = n^2 + 12n - 12 is a perfect square (square of a nonnegative integer). Let h(n) = k^2, where k is integer >=0.\n\nSo n^2 + 12n - 12 = k^2.\n\nRewrite: n^2 + 12n - 12 - k^2 = 0 => (n^2 + 12n + 36) - 48 - k^2 = 0 => (n+6)^2 - k^2 = 48.\n\nThus (n+6 - k)(n+6 + k) = 48.\n\nLet a = n+6 - k, b = n+6 + k, with a*b = 48, and a,b are integers, same parity (since sum 2(n+6) = a+b even => a and b have same parity). Also b >= a (since k >=0). Also n positive integer => n >=1.\n\nWe can solve for n,k: n+6 = (a+b)/2, k = (b-a)/2.\n\nThus a and b must be integer factors of 48 with same parity, and (a+b)/2 >=7 (since n+6 >=7 => n>=1). Also n positive integer => (a+b)/2 -6 integer positive.\n\nAlso k nonnegative => b >= a.\n\nNow list factor pairs (a,b) of 48 (including negative? Since product 48 positive, both a,b same sign. Could be both positive or both negative. But n+6 = (a+b)/2 must be >=7, so a+b positive. If both negative, sum negative, can't be >=7. So both positive.\n\nThus a,b positive integers, a*b=48, a <= b, same parity.\n\nList positive factor pairs of 48:\n\n1*48, 2*24, 3*16, 4*12, 6*8.\n\nNow check parity:\n\n1 and 48: one odd one even -> different parity -> discard.\n\n2 and 24: both even -> ok.\n\n3 and 16: odd/even -> discard.\n\n4 and 12: both even -> ok.\n\n6 and 8: both even -> ok.\n\nAlso could have a=b? sqrt(48) not integer, so no.\n\nNow compute n for each:\n\nCase a=2,b=24: n+6 = (2+24)/2 =13 => n=7. k = (24-2)/2 =11. Check h(7)=49+84-12=121=11^2 ok.\n\nCase a=4,b=12: n+6 = (4+12)/2 =8 => n=2. k = (12-4)/2 =4. h(2)=4+24-12=16=4^2 ok.\n\nCase a=6,b=8: n+6 = (6+8)/2 =7 => n=1. k = (8-6)/2 =1. h(1)=1+12-12=1=1^2 ok.\n\nThus three positive integer n: 1,2,7.\n\nCheck if any other factor pairs with a,b swapped? Since a <= b we covered all. Also could have a,b negative? Not needed.\n\nThus number of positive integers n is 3.\n\nAnswer: \\boxed{3}."
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 807,
+    "total_tokens": 1029
+  },
+  "elapsed_time_sec": 5.58214807510376,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "upstage/solar-pro-3",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:36:31.657435+00:00"
+  }
+}

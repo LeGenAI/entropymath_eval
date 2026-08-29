@@ -1,0 +1,67 @@
+{
+  "started_at_utc": "2026-06-07T04:36:05.138633+00:00",
+  "finished_at_utc": "2026-06-07T08:40:47.482504+00:00",
+  "competition": "tokyo_math_hf_private",
+  "solver": "direct",
+  "n_repeats": 3,
+  "max_problems": null,
+  "models_total": 7,
+  "runs": [
+    {
+      "model_config": "hosted_kt_midm",
+      "started_at_utc": "2026-06-07T04:36:05.140336+00:00",
+      "finished_at_utc": "2026-06-07T04:38:41.161970+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 156.022
+    },
+    {
+      "model_config": "friendli_k_exaone",
+      "started_at_utc": "2026-06-07T04:38:41.163584+00:00",
+      "finished_at_utc": "2026-06-07T06:18:22.371111+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 5981.208
+    },
+    {
+      "model_config": "openrouter_solar_pro_3",
+      "started_at_utc": "2026-06-07T06:18:22.373637+00:00",
+      "finished_at_utc": "2026-06-07T06:45:03.478124+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 1601.104
+    },
+    {
+      "model_config": "openrouter_gpt_5_5",
+      "started_at_utc": "2026-06-07T06:45:03.480291+00:00",
+      "finished_at_utc": "2026-06-07T07:01:30.269681+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 986.789
+    },
+    {
+      "model_config": "openrouter_claude_opus_4_8",
+      "started_at_utc": "2026-06-07T07:01:30.270865+00:00",
+      "finished_at_utc": "2026-06-07T07:14:01.820291+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 751.549
+    },
+    {
+      "model_config": "openrouter_gemini_3_5_flash",
+      "started_at_utc": "2026-06-07T07:14:01.821520+00:00",
+      "finished_at_utc": "2026-06-07T07:32:33.858283+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 1112.037
+    },
+    {
+      "model_config": "openrouter_deepseek_v4_pro",
+      "started_at_utc": "2026-06-07T07:32:33.860049+00:00",
+      "finished_at_utc": "2026-06-07T08:40:47.480753+00:00",
+      "returncode": 0,
+      "status": "success",
+      "elapsed_seconds": 4093.621
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn the original parametric-plane problem, one required value is \\(3/5\\). If this\nvalue is \\(p/q\\) in lowest terms, find \\(p+q\\).",
+  "final_answer": "8",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "To find the value of $p+q$ for the fraction $\\frac{3}{5}$ in lowest terms:\n\n1. The fraction is $\\frac{3}{5}$, which is already in its lowest terms since the greatest common divisor of $3$ and $5$ is $1$.\n2. Here, $p = 3$ and $q = 5$.\n3. Calculate the sum: $p + q = 3 + 5 = 8$.\n\n\\boxed{8}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 144,
+    "completion_tokens": 519,
+    "total_tokens": 663
+  },
+  "elapsed_time_sec": 3.464813232421875,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 14,
+  "sample_id": 14,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "8",
+  "sample_metadata": {
+    "no": 15,
+    "ID": "TOKYO-2025-SCIENCE-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "google/gemini-3.5-flash",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:26:28.927044+00:00"
+  }
+}

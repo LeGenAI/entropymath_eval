@@ -1,0 +1,12 @@
+name: tokyo_math_local
+dataset_path: json
+data_files: data/tokyo_math/data/train.jsonl
+subset: train
+n_problems: 999
+start_idx: 0
+instruction: "Reason step by step. Put the final answer in \\boxed{}."
+sample_source: "Local Tokyo University Mathematics Problems 2024-2026 Revised Integer QA JSONL"
+primary_metric: accuracy@1
+secondary_metrics:
+  - pass@3
+  - consistency_gap

@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nTo solve the problem, we are given the function:\n\n$$\nh(n) = n^2 + 12n - 12\n$$\n\nand asked to determine how many **positive integers** $ n $ exist such that $ h(n) $ is a **square number**.\n\n---\n\n### Step 1: Expressing the Condition\n\nWe are looking for positive integers $ n $ such that:\n\n$$\nn^2 + 12n - 12 = k^2\n$$\n\nfor some nonnegative integer $ k $. To simplify this, complete the square on the left-hand side:\n\n$$\nn^2 + 12n - 12 = (n + 6)^2 - 48\n$$\n\nSo the equation becomes:\n\n$$\n(n + 6)^2 - k^2 = 48\n$$\n\nThis is a **difference of squares**, which factors as:\n\n$$\n(n + 6 - k)(n + 6 + k) = 48\n$$\n\nLet:\n- $ u = n + 6 - k $\n- $ v = n + 6 + k $\n\nThen:\n- $ uv = 48 $\n- $ u < v $\n- $ v - u = 2k $ must be even ⇒ $ u $ and $ v $ must have the **same parity**\n\nAlso, since $ n + 6 \\geq 7 $ (as $ n \\geq 1 $), and $ k \\geq 0 $, both $ u $ and $ v $ must be **positive integers**.\n\n---\n\n### Step 2: Enumerating Valid Factor Pairs\n\nList all **positive factor pairs** of 48 with $ u < v $, and check which ones have the same parity:\n\n| Pair | Same Parity? | Valid? |\n|------|---------------|--------|\n| (1, 48) | No            | ❌     |\n| (2, 24) | Yes           | ✅     |\n| (3, 16) | No            | ❌     |\n| (4, 12) | Yes           | ✅     |\n| (6, 8)  | Yes           | ✅     |\n\nOnly these three pairs satisfy the condition that $ u $ and $ v $ have the same parity.\n\n---\n\n### Step 3: Solving for $ n $ in Each Case\n\nFor each valid pair $ (u, v) $, compute:\n\n$$\nn + 6 = \\frac{u + v}{2}, \\quad k = \\frac{v - u}{2}\n$$\n\n#### Case 1: $ (u, v) = (2, 24) $\n\n$$\nn + 6 = \\frac{2 + 24}{2} = 13 \\Rightarrow n = 7 \\\\\nk = \\frac{24 - 2}{2} = 11\n$$\n\nCheck: $ h(7) = 7^2 + 12 \\cdot 7 - 12 = 49 + 84 - 12 = 121 = 11^2 $ ✅\n\n#### Case 2: $ (u, v) = (4, 12) $\n\n$$\nn + 6 = \\frac{4 + 12}{2} = 8 \\Rightarrow n = 2 \\\\\nk = \\frac{12 - 4}{2} = 4\n$$\n\nCheck: $ h(2) = 4 + 24 - 12 = 16 = 4^2 $ ✅\n\n#### Case 3: $ (u, v) = (6, 8) $\n\n$$\nn + 6 = \\frac{6 + 8}{2} = 7 \\Rightarrow n = 1 \\\\\nk = \\frac{8 - 6}{2} = 1\n$$\n\nCheck: $ h(1) = 1 + 12 - 12 = 1 = 1^2 $ ✅\n\n---\n\n### Step 4: Verifying No Other Solutions\n\n- We considered all **positive** factor pairs of 48.\n- Only those where $ u $ and $ v $ have the **same parity** yield integer values for $ k $.\n- Negative factor pairs would lead to $ n + 6 < 0 $, contradicting the fact that $ n \\geq 1 $.\n- Checking values of $ n > 7 $ manually shows no further perfect squares in $ h(n) $.\n- Also, solving the quadratic $ n^2 + 12n - 12 = k^2 $ for small $ k $ confirms only the above three solutions.\n\n---\n\n### Final Answer\n\nThe positive integers $ n $ for which $ h(n) $ is a square number are:\n\n$$\nn = 1,\\ 2,\\ 7\n$$\n\nThus, the total number of such positive integers is:\n\n$$\n\\boxed{3}\n$$"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 141,
+    "completion_tokens": 10572,
+    "total_tokens": 10713
+  },
+  "elapsed_time_sec": 129.70357489585876,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T05:46:38.527706+00:00"
+  }
+}

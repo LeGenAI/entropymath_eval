@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn the original parametric-plane problem, one required value is \\(3/5\\). If this\nvalue is \\(p/q\\) in lowest terms, find \\(p+q\\).",
+  "final_answer": "8",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nThe problem states that the required value is $ \\frac{3}{5} $, which is already in its lowest terms. For a fraction $ \\frac{p}{q} $ in lowest terms, $ p $ and $ q $ must be coprime integers with no common divisors other than 1. Here, $ p = 3 $ and $ q = 5 $, since $ \\gcd(3, 5) = 1 $. Therefore, $ p + q = 3 + 5 = 8 $.\n\n$$\n\\boxed{8}\n$$"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 130,
+    "completion_tokens": 389,
+    "total_tokens": 519
+  },
+  "elapsed_time_sec": 63.39013886451721,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 14,
+  "sample_id": 14,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "8",
+  "sample_metadata": {
+    "no": 15,
+    "ID": "TOKYO-2025-SCIENCE-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T05:41:19.753003+00:00"
+  }
+}

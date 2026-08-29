@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nAmong the positive divisors of \\(n\\), let \\(f(n)\\) be the number congruent to\n\\(1\\) modulo \\(3\\), and let \\(g(n)\\) be the number congruent to \\(2\\) modulo\n\\(3\\). If \\(g(n)=15\\), the possible values of \\(f(n)\\) are\n\\[\n15,\n16,\n18,\n20,\n30.\n\\]\nFind the sum of all possible values of \\(f(n)\\).",
+  "final_answer": "99",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{99}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 9,
+    "total_tokens": 308
+  },
+  "elapsed_time_sec": 1.2215120792388916,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 25,
+  "sample_id": 25,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "99",
+  "sample_metadata": {
+    "no": 26,
+    "ID": "TOKYO-2026-SCIENCE-6",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:12:39.209531+00:00"
+  }
+}

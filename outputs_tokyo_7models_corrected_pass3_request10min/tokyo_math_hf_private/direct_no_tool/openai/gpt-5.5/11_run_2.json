@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn an isosceles triangle \\(ABC\\) with \\(AB=AC=1\\), let \\(s\\) be the smallest\nradius such that the three disks centered at \\(A,B,C\\) cover all three sides.\nFor \\(\\angle BAC=\\pi/3\\), \\(s=1/2\\). For \\(\\angle BAC=2\\pi/3\\), \\(s=\\sqrt3/2\\).\nCompute the integer\n\\[\n(2s_1)+(4s_2^2),\n\\]\nwhere \\(s_1\\) is the first value and \\(s_2\\) is the second value.",
+  "final_answer": "4",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{4}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 100,
+    "total_tokens": 344
+  },
+  "elapsed_time_sec": 4.053170919418335,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 11,
+  "sample_id": 11,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "4",
+  "sample_metadata": {
+    "no": 12,
+    "ID": "TOKYO-2025-HUMANITIES-2",
+    "Difficulty": "Easy"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "openai/gpt-5.5",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:54:47.817198+00:00"
+  }
+}

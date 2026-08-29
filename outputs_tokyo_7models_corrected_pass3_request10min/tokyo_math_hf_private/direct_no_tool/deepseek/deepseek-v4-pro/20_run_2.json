@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nFor\n\\[\nf(\\theta)=\\sin\\theta-\\theta+\\frac{\\theta^3}{6}\n\\]\non \\(-1\\le\\theta\\le1\\), let \\(M\\) be the maximum value and \\(m\\) be the minimum\nvalue. The individual values contain \\(\\sin1\\), so instead compute the integer\n\\[\nM+m.\n\\]",
+  "final_answer": "0",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "The function \\( f(\\theta) = \\sin\\theta - \\theta + \\frac{\\theta^3}{6} \\) is odd because \\( f(-\\theta) = -f(\\theta) \\). The interval \\([-1, 1]\\) is symmetric about 0. For an odd continuous function on a symmetric interval, the maximum \\( M \\) and minimum \\( m \\) satisfy \\( m = -M \\). Therefore, \\( M + m = 0 \\).\n\n\\boxed{0}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 180,
+    "completion_tokens": 1225,
+    "total_tokens": 1405
+  },
+  "elapsed_time_sec": 46.20362615585327,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 20,
+  "sample_id": 20,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "0",
+  "sample_metadata": {
+    "no": 21,
+    "ID": "TOKYO-2026-SCIENCE-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T08:27:06.956340+00:00"
+  }
+}

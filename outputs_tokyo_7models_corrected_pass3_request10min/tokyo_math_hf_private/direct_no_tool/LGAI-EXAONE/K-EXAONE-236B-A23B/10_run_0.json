@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a>0\\), and consider the parabola \\(y=x^2\\). Starting from\n\\(P(a,a^2)\\), let \\(Q\\ne P\\) be the other intersection of the normal line to\nthe parabola at \\(P\\) with the parabola. Let \\(R\\ne Q\\) be the other\nintersection of the normal line at \\(Q\\) with the parabola.\n\nIf the minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M\\), write\n\\(M^2=p/q\\) in lowest terms and find \\(p+q\\).",
+  "final_answer": "33",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\n\nThe minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M = \\frac{5\\sqrt{2}}{4}\\). Then \\(M^2 = \\frac{25}{8}\\). In lowest terms, \\(p = 25\\), \\(q = 8\\), and \\(p+q = 33\\).\n\n\\boxed{33}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 10967,
+    "total_tokens": 11169
+  },
+  "elapsed_time_sec": 79.77218103408813,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 10,
+  "sample_id": 10,
+  "entropymath_id": null,
+  "run_idx": 0,
+  "gold_answer": "33",
+  "sample_metadata": {
+    "no": 11,
+    "ID": "TOKYO-2025-HUMANITIES-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "LGAI-EXAONE/K-EXAONE-236B-A23B",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": null,
+      "top_p": null,
+      "max_tokens": null,
+      "max_turns": 1,
+      "sampling_params_locked": true,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T05:29:37.519495+00:00"
+  }
+}

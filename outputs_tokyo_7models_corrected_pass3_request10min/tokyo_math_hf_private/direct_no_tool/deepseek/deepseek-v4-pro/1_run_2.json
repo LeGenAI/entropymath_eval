@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(n\\) be the smallest natural number such that \\(5^n>10^9\\), and let \\(m\\)\nbe the smallest natural number such that \\(5^m+4^m>10^9\\). Find \\(n+m\\).",
+  "final_answer": "26",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{26}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 858,
+    "total_tokens": 1017
+  },
+  "elapsed_time_sec": 15.528219223022461,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 1,
+  "sample_id": 1,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "26",
+  "sample_metadata": {
+    "no": 2,
+    "ID": "TOKYO-2024-HUMANITIES-2",
+    "Difficulty": "Easy"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:35:12.538336+00:00"
+  }
+}

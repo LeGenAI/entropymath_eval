@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nFor\n\\[\nf(\\theta)=\\sin\\theta-\\theta+\\frac{\\theta^3}{6}\n\\]\non \\(-1\\le\\theta\\le1\\), let \\(M\\) be the maximum value and \\(m\\) be the minimum\nvalue. The individual values contain \\(\\sin1\\), so instead compute the integer\n\\[\nM+m.\n\\]",
+  "final_answer": "0",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{0}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 403,
+    "total_tokens": 595
+  },
+  "elapsed_time_sec": 8.375355243682861,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 20,
+  "sample_id": 20,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "0",
+  "sample_metadata": {
+    "no": 21,
+    "ID": "TOKYO-2026-SCIENCE-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "openai/gpt-5.5",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:57:02.415469+00:00"
+  }
+}

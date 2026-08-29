@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a>0\\), and consider the parabola \\(y=x^2\\). Starting from\n\\(P(a,a^2)\\), let \\(Q\\ne P\\) be the other intersection of the normal line to\nthe parabola at \\(P\\) with the parabola. Let \\(R\\ne Q\\) be the other\nintersection of the normal line at \\(Q\\) with the parabola.\n\nIf the minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M\\), write\n\\(M^2=p/q\\) in lowest terms and find \\(p+q\\).",
+  "final_answer": "33",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "<think>\nParabola y=x². At point P(a,a²), slope of tangent is 2a, normal slope is -1/(2a).\n\nNormal line at P intersects parabola again at Q. For parabola y=x², if point at x=a, the other intersection of normal has x-coordinate.\n\nNormal line: y - a² = -1/(2a)(x - a).\nIntersect with y=x²: x² - a² = -1/(2a)(x-a)\n(x-a)(x+a) = -1/(2a)(x-a)\nx+a = -1/(2a) (for x≠a)\nx = -a - 1/(2a).\n\nSo Q has x-coordinate b = -a - 1/(2a).\n\nSimilarly R has x-coordinate c = -b - 1/(2b).\n\nWe want minimum of c over a>0.\n\nLet me compute. b = -a - 1/(2a). With a>0, b<0.\n\nc = -b - 1/(2b).\n\nLet's express. Let b = -(a + 1/(2a)). Then -b = a+1/(2a).\n1/(2b) = 1/(2·(-(a+1/(2a)))) = -1/(2(a+1/(2a))).\nSo -1/(2b) = 1/(2(a+1/(2a))).\n\nc = -b - 1/(2b) = (a + 1/(2a)) + 1/(2(a+1/(2a))).\n\nWait let me be careful: c = -b - 1/(2b).\n-b = a + 1/(2a).\n-1/(2b): 1/(2b) = 1/(2·b) where b negative. = -1/(2(a+1/(2a))). So -1/(2b) = +1/(2(a+1/(2a))).\n\nc = -b - 1/(2b) = [a + 1/(2a)] + [1/(2(a+1/(2a)))].\n\nLet u = a + 1/(2a). For a>0, u ≥ 2·sqrt(a·1/(2a)) = 2·sqrt(1/2)= sqrt(2). So u ≥ √2.\n\nc = u + 1/(2u).\n\nWe want minimize c over u ≥ √2.\n\nf(u)= u + 1/(2u), f'(u) = 1 - 1/(2u²). Setting zero: u² = 1/2, u=1/√2 <√2. So on u≥√2, f is increasing (since for u>1/√2, f'>0). Thus minimum at u=√2.\n\nc_min = √2 + 1/(2√2) = √2 + 1/(2√2) = √2 + (√2/4) = (4√2+√2)/4 = 5√2/4.\n\nM = 5√2/4. M² = 25·2/16 = 50/16 = 25/8.\n\np/q = 25/8, lowest terms, p+q=33.\n</think>\n\n\\boxed{33}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 919,
+    "total_tokens": 1254
+  },
+  "elapsed_time_sec": 9.675318002700806,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 10,
+  "sample_id": 10,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "33",
+  "sample_metadata": {
+    "no": 11,
+    "ID": "TOKYO-2025-HUMANITIES-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:09:51.886378+00:00"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn an isosceles triangle \\(ABC\\) with \\(AB=AC=1\\), let \\(s\\) be the smallest\nradius such that the three disks centered at \\(A,B,C\\) cover all three sides.\nFor \\(\\angle BAC=\\pi/3\\), \\(s=1/2\\). For \\(\\angle BAC=2\\pi/3\\), \\(s=\\sqrt3/2\\).\nCompute the integer\n\\[\n(2s_1)+(4s_2^2),\n\\]\nwhere \\(s_1\\) is the first value and \\(s_2\\) is the second value.",
+  "final_answer": "4",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "The given values are \\(s_1 = \\frac{1}{2}\\) and \\(s_2 = \\frac{\\sqrt{3}}{2}\\). We need to compute \\(2s_1 + 4s_2^2\\):\n\n\\[\n2s_1 = 2 \\times \\frac{1}{2} = 1,\n\\]\n\\[\ns_2^2 = \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = \\frac{3}{4}, \\quad 4s_2^2 = 4 \\times \\frac{3}{4} = 3,\n\\]\n\\[\n2s_1 + 4s_2^2 = 1 + 3 = 4.\n\\]\n\n\\boxed{4}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 228,
+    "completion_tokens": 355,
+    "total_tokens": 583
+  },
+  "elapsed_time_sec": 7.453527212142944,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 11,
+  "sample_id": 11,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "4",
+  "sample_metadata": {
+    "no": 12,
+    "ID": "TOKYO-2025-HUMANITIES-2",
+    "Difficulty": "Easy"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T08:20:36.927739+00:00"
+  }
+}

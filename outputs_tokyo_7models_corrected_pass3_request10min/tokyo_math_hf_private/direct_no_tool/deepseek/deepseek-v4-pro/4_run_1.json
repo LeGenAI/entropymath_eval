@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nIn three-dimensional space, take \\(A(0,1,1)\\) and \\(O(0,0,0)\\). Let \\(P\\) be a point on the \\(xy\\)-plane satisfying\n\\[\nOP=2,\\qquad \\angle AOP\\ge \\frac{2\\pi}{3},\\qquad \\angle OAP\\le \\frac{\\pi}{3}.\n\\]\nLet \\(L\\) be the total arc length of the set of all possible points \\(P\\). If\n\\(L=p\\pi/q\\) in lowest terms, find \\(p+q\\).",
+  "final_answer": "2",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "\\boxed{2}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 4997,
+    "total_tokens": 5219
+  },
+  "elapsed_time_sec": 76.84437298774719,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 4,
+  "sample_id": 4,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "2",
+  "sample_metadata": {
+    "no": 5,
+    "ID": "TOKYO-2024-SCIENCE-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:48:16.646325+00:00"
+  }
+}

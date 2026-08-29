@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We need n²+12n-12 = m².\n\nn²+12n-12 = (n+6)²-48 = m².\n\nSo (n+6)²-m²=48.\n(n+6-m)(n+6+m)=48.\n\nLet a=n+6-m, b=n+6+m, ab=48, a≤b, same parity (both even since sum 2(n+6) even... actually a+b=2(n+6) even, so same parity).\n\n48=2·24, 4·12, 6·8 (even pairs).\n- a=2,b=24: n+6=13, n=7, m=11. Check: 49+84-12=121=11². Yes.\n- a=4,b=12: n+6=8, n=2, m=4. Check:4+24-12=16. Yes.\n- a=6,b=8: n+6=7, n=1, m=1. Check:1+12-12=1. Yes.\n\nAlso negative factors? a,b both negative would give n+6 negative, invalid for positive n.\n\nSo three values: n=1,2,7.\n\n\\boxed{3}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 330,
+    "total_tokens": 557
+  },
+  "elapsed_time_sec": 4.093103885650635,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "anthropic/claude-opus-4.8",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T07:10:54.851448+00:00"
+  }
+}

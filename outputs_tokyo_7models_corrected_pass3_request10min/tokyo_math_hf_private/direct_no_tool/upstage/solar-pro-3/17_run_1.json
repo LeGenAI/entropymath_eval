@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nA square number means the square of a nonnegative integer. Let\n\\[\nh(n)=n^2+12n-12.\n\\]\nFind the number of positive integers \\(n\\) for which \\(h(n)\\) is a square number.",
+  "final_answer": "3",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "We need to find number of positive integers n such that h(n) = n^2 + 12n - 12 is a perfect square (square of a nonnegative integer). Let's denote h(n) = k^2, where k is integer >=0.\n\nSo n^2 + 12n -12 = k^2.\n\nRewrite as (n+6)^2 - 36 -12 = k^2? Actually (n+6)^2 = n^2 +12n +36. So n^2+12n-12 = (n+6)^2 -48.\n\nThus (n+6)^2 - k^2 = 48.\n\nFactor: (n+6 - k)(n+6 + k) = 48.\n\nLet a = n+6 - k, b = n+6 + k, with a,b integers, same parity (since sum 2(n+6) is even, a and b have same parity). Also a*b = 48, and b >= a (since k >=0). Also n = (a+b)/2 -6, must be positive integer.\n\nWe need a,b integers, same parity, product 48, and resulting n positive integer.\n\nAlso k = (b - a)/2 >=0.\n\nWe need to consider all factor pairs (a,b) of 48 (including negative? Since n positive, but a,b could be negative? Let's see: n+6 = (a+b)/2. If a and b both negative, then n+6 negative, n negative, not allowed. If one negative and one positive, product negative, not 48 positive. So both must be positive. Also could be both negative? product positive 48, but then n+6 negative, n negative, not positive. So a,b >0.\n\nThus we need positive integer factor pairs (a,b) with a*b=48, a <= b, same parity.\n\nList factor pairs of 48:\n\n1*48, 2*24, 3*16, 4*12, 6*8.\n\nAlso 48*1 same as 1*48.\n\nNow check parity:\n\n1 and 48: one odd, one even -> different parity -> not allowed.\n\n2 and 24: both even -> same parity (even). Good.\n\n3 and 16: odd/even -> not allowed.\n\n4 and 12: both even -> allowed.\n\n6 and 8: both even -> allowed.\n\nAlso could have a=b? sqrt(48) not integer, so no.\n\nNow compute n for each:\n\nCase a=2,b=24:\n\nn+6 = (2+24)/2 = 13 => n = 7.\n\nCheck k = (b-a)/2 = (24-2)/2 =11. Then h(7)=7^2+84-12=49+72=121=11^2. Works.\n\nCase a=4,b=12:\n\nn+6 = (4+12)/2 =8 => n=2.\n\nk = (12-4)/2 =4. h(2)=4+24-12=16=4^2. Works.\n\nCase a=6,b=8:\n\nn+6 = (6+8)/2 =7 => n=1.\n\nk = (8-6)/2 =1. h(1)=1+12-12=1=1^2. Works.\n\nAre there any other factor pairs with a,b positive? Also could have a=12,b=4 but a<=b we already considered. So three solutions.\n\nBut need positive integers n. n=1,2,7 are positive.\n\nCheck if any other possibilities where a,b could be swapped? Already covered.\n\nThus number of positive integers n is 3.\n\nBut wait: Could there be solutions where k negative? Since square, k can be nonnegative integer, but we used k = (b-a)/2, which is nonnegative if b>=a. So fine.\n\nThus answer: 3.\n\nBut double-check if n must be positive integer (n>0). Yes.\n\nThus final answer \\boxed{3}."
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 933,
+    "total_tokens": 1155
+  },
+  "elapsed_time_sec": 6.171029090881348,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 17,
+  "sample_id": 17,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "3",
+  "sample_metadata": {
+    "no": 18,
+    "ID": "TOKYO-2025-SCIENCE-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "upstage/solar-pro-3",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T06:36:26.072889+00:00"
+  }
+}

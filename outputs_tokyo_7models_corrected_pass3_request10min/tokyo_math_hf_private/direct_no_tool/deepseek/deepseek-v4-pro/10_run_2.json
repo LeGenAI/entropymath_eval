@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nLet \\(a>0\\), and consider the parabola \\(y=x^2\\). Starting from\n\\(P(a,a^2)\\), let \\(Q\\ne P\\) be the other intersection of the normal line to\nthe parabola at \\(P\\) with the parabola. Let \\(R\\ne Q\\) be the other\nintersection of the normal line at \\(Q\\) with the parabola.\n\nIf the minimum possible \\(x\\)-coordinate of \\(R\\) is \\(M\\), write\n\\(M^2=p/q\\) in lowest terms and find \\(p+q\\).",
+  "final_answer": "33",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "The x-coordinate of point \\( R \\) is given by \\( r(a) = a + \\frac{1}{2a} + \\frac{a}{2a^2+1} \\) for \\( a > 0 \\). Minimizing this function yields a single critical point at \\( a = \\frac{1}{\\sqrt{2}} \\), with minimum value \\( M = \\frac{5\\sqrt{2}}{4} \\). Squaring gives \\( M^2 = \\frac{25}{8} \\), so \\( p = 25 \\) and \\( q = 8 \\). Thus \\( p+q = 33 \\).\n\n\\boxed{33}"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 3775,
+    "total_tokens": 3997
+  },
+  "elapsed_time_sec": 58.05529999732971,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 10,
+  "sample_id": 10,
+  "entropymath_id": null,
+  "run_idx": 2,
+  "gold_answer": "33",
+  "sample_metadata": {
+    "no": 11,
+    "ID": "TOKYO-2025-HUMANITIES-1",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deepseek/deepseek-v4-pro",
+      "provider": "openrouter",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T08:20:14.072903+00:00"
+  }
+}

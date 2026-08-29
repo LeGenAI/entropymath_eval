@@ -1,0 +1,6 @@
+model: ${KT_MIDM_MODEL_ID}
+base_url: ${KT_MIDM_BASE_URL}
+api_key: ${FRIENDLI_API_KEY}
+temperature: 0
+max_tokens: 16000
+max_turns: 1

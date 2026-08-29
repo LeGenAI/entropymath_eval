@@ -1,0 +1,46 @@
+{
+  "problem": "Return a single integer only. The problem has been revised so that no final answer is an irrational number, a parameterized expression, a range, a proof, a drawing, a graph, a locus equation, or a region description.\n\nFor the relevant optimization problem, the maximum value is \\(19/6\\). If the\nmaximum is \\(p/q\\) in lowest terms, find \\(p+q\\).",
+  "final_answer": "25",
+  "history": [
+    {
+      "role": "assistant",
+      "content": "To solve the problem, we need to determine the sum \\( p + q \\) where the maximum value of the optimization problem is given as \\( \\frac{19}{6} \\) in lowest terms.\n\n1. **Identify the fraction**: The maximum value is \\( \\frac{19}{6} \\), which is already in lowest terms. Here, \\( p = 19 \\) and \\( q = 6 \\).\n\n2. **Calculate the sum**: Add the numerator and the denominator:\n   \\[\n   p + q = 19 + 6 = 25\n   \\]\n\n**Final Answer**: \\(\\boxed{25}\\)"
+    }
+  ],
+  "solved": true,
+  "token_usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 135,
+    "total_tokens": 780
+  },
+  "elapsed_time_sec": 0.5068600177764893,
+  "solver_protocol": "direct_no_tool",
+  "answer_extraction_status": "boxed_found",
+  "id": 13,
+  "sample_id": 13,
+  "entropymath_id": null,
+  "run_idx": 1,
+  "gold_answer": "25",
+  "sample_metadata": {
+    "no": 14,
+    "ID": "TOKYO-2025-HUMANITIES-4",
+    "Difficulty": "Medium"
+  },
+  "run_metadata": {
+    "model": {
+      "model": "deprk58vp9q3z6g",
+      "provider": "friendli",
+      "api_type": "openai",
+      "temperature": 0,
+      "top_p": null,
+      "max_tokens": 16000,
+      "max_turns": 1,
+      "sampling_params_locked": false,
+      "tool_solver_enabled": false
+    },
+    "prompt_template_sha256_16": "1c47900b04fe6414",
+    "parser_version": "boxed_extractor_v1",
+    "grader_version": "sympy_equivalence_v1",
+    "run_timestamp_utc": "2026-06-07T04:37:39.304157+00:00"
+  }
+}
